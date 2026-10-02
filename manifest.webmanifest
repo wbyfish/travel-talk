@@ -1,6 +1,6 @@
 {
-  "name": "旅遊會話",
-  "short_name": "旅遊會話",
+  "name": "我的旅遊會話",
+  "short_name": "我的旅遊會話",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

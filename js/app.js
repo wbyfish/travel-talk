@@ -221,7 +221,7 @@ function highlight(text, q) {
 
 let homeQuery = '';
 function renderHome() {
-  setChrome({ title: `${pack.flag} ${pack.name}`, tab: 'home' });
+  setChrome({ title: `我的旅遊會話・${pack.name}`, tab: 'home' });
   view.innerHTML = `
     <input class="search" type="search" placeholder="搜尋句子、單字、情境…" value="${esc(homeQuery)}" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
     <div id="home-body"></div>`;
