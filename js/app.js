@@ -1,7 +1,7 @@
 'use strict';
 
 /* =========================================================
-   旅遊會話 — offline travel phrase trainer (PWA)
+   My Travel Talk — offline travel phrase trainer (PWA)
    Data lives in data/<pack>.json; packs are listed in data/packs.json.
    ========================================================= */
 
@@ -221,7 +221,7 @@ function highlight(text, q) {
 
 let homeQuery = '';
 function renderHome() {
-  setChrome({ title: `我的旅遊會話・${pack.name}`, tab: 'home' });
+  setChrome({ title: `My Travel Talk・${pack.name}`, tab: 'home' });
   view.innerHTML = `
     <input class="search" type="search" placeholder="搜尋句子、單字、情境…" value="${esc(homeQuery)}" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
     <div id="home-body"></div>`;
@@ -676,7 +676,12 @@ async function boot() {
   }
   window.addEventListener('hashchange', route);
   route();
-  if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+  if ('serviceWorker' in navigator) {
+    // When a new version finishes installing, reload once so it shows up right away.
+    const hadController = !!navigator.serviceWorker.controller;
+    navigator.serviceWorker.addEventListener('controllerchange', () => { if (hadController) location.reload(); });
+    navigator.serviceWorker.register('sw.js').catch(() => {});
+  }
   navigator.storage?.persist?.();
 }
 boot();
