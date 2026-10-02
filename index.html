@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="旅遊會話">
+  <meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111412" media="(prefers-color-scheme: dark)">
+  <title>旅遊會話</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <header id="topbar">
+    <button id="back" class="icon-btn" aria-label="返回" hidden>‹</button>
+    <h1 id="title">旅遊會話</h1>
+    <span id="top-right"></span>
+  </header>
+  <main id="view"></main>
+  <nav id="tabbar">
+    <a href="#/" data-tab="home"><span>💬</span>情境</a>
+    <a href="#/cards" data-tab="cards"><span>🃏</span>練習</a>
+    <a href="#/favs" data-tab="favs"><span>⭐</span>收藏</a>
+    <a href="#/settings" data-tab="settings"><span>⚙️</span>設定</a>
+  </nav>
+  <div id="overlay" hidden></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
