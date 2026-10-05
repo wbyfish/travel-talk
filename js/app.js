@@ -634,7 +634,28 @@ function renderSettings() {
     <div class="list"><div class="field"><button class="pill" id="reset">↺ 清除「已記住」的卡片紀錄</button></div></div>
 
     <div class="cat-title">安裝到主畫面</div>
-    <div class="help">用 Safari 打開這個網頁 → 下方「分享」按鈕 → 「加入主畫面」。之後從主畫面打開，沒有網路也能用。</div>`;
+    <div class="help">用 Safari 打開這個網頁 → 下方「分享」按鈕 → 「加入主畫面」。之後從主畫面打開，沒有網路也能用。</div>
+
+    <div class="cat-title">版本</div>
+    <div class="list"><div class="field">
+      <label>目前版本：<span id="ver">…</span></label>
+      <button class="pill" id="update">⟳ 檢查更新</button>
+    </div></div>`;
+
+  if ('caches' in window) caches.keys().then(k => { $('#ver').textContent = k.join(', ') || '（尚未離線儲存）'; }).catch(() => {});
+  $('#update').onclick = async e => {
+    const btn = e.currentTarget;
+    btn.textContent = '檢查中…';
+    try {
+      const reg = await navigator.serviceWorker?.getRegistration();
+      await reg?.update();
+      // A new version installs, activates and triggers the controllerchange reload.
+      // If nothing new arrives within a few seconds, reload anyway to pick up fresh files.
+      setTimeout(() => location.reload(), 4000);
+    } catch {
+      btn.textContent = '沒有網路，稍後再試';
+    }
+  };
 
   $('#pack').onchange = async e => { settings.pack = e.target.value; settings.voiceURI = ''; saveSettings(); await loadPack(); location.hash = '#/'; };
   $('#voice').onchange = e => { settings.voiceURI = e.target.value; saveSettings(); tts.speak('Hello! Welcome to Dublin.'); };
