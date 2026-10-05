@@ -18,61 +18,76 @@
       "cat": "airport",
       "title": "Airport Check-in",
       "zh": "機場報到",
-      "desc": "Checking in for the flight to Dublin via Istanbul.",
+      "desc": "Checking in for the flight to Dublin via Istanbul: passport, bags, seat, and asking about the layover.",
       "parts": [
         { "lines": [
-          ["Airport Staff", "May I have your passport, please?"],
+          ["Airport Staff", "Good morning. Where are you flying today?"],
+          ["You", "I'm flying to Dublin via Istanbul. I'd like to check in for my flight, please."],
+          ["Airport Staff", "Of course. May I have your passport, please?"],
           ["You", "Sure. Here you are."],
-          ["Airport Staff", "Where are you flying today?"],
-          ["You", "I'm flying to Dublin via Istanbul."],
           ["Airport Staff", "Are you traveling for business or vacation?"],
           ["You", "I'm traveling for vacation."],
           ["Airport Staff", "How many bags would you like to check in today?"],
-          ["You", "Just one, please."],
+          ["You", "I'd like to check one bag."],
           ["Airport Staff", "Would you like a window seat or an aisle seat?"],
-          ["You", "I'd prefer an aisle seat, please."],
-          ["Airport Staff", "Do you know that your baggage will be checked through to Dublin?"],
-          ["You", "Yes, I do. Thank you."],
-          ["Airport Staff", "Do you have any questions?"],
+          ["You", "I'd prefer an aisle seat, please. Is the flight full?"],
+          ["Airport Staff", "It's quite busy today, but there are still a few aisle seats left."],
+          ["Airport Staff", "Your bag will be checked through to Dublin, so you don't need to collect it in Istanbul."],
+          ["You", "Great. How long is the layover in Istanbul?"],
+          ["Airport Staff", "It's about two hours."],
+          ["You", "Do I have enough time to make my connection?"],
+          ["Airport Staff", "Yes, that should be plenty of time."],
+          ["Airport Staff", "Here's your boarding pass. Do you have any other questions?"],
           ["You", "No, I'm all set. Thank you."]
         ]}
       ],
       "sentences": [
-        "I'd like to check in for my flight to Dublin.",
         "I'm flying to Dublin via Istanbul.",
+        "I'd like to check in for my flight, please.",
+        "I'm traveling for vacation.",
         "I'd like to check one bag.",
         "I'd prefer an aisle seat, please.",
         "Is the flight full?",
         "How long is the layover in Istanbul?",
-        "Do I have enough time to make my connection?"
+        "Do I have enough time to make my connection?",
+        "No, I'm all set. Thank you."
       ],
       "vocab": [
         ["passport", "護照"], ["boarding pass", "登機證"], ["checked baggage", "托運行李"],
         ["carry-on bag", "隨身行李"], ["window seat", "靠窗座位"], ["aisle seat", "靠走道座位"],
-        ["transfer", "轉機"], ["layover", "轉機停留"], ["gate", "登機門"],
-        ["checked through", "行李直掛到目的地"]
+        ["layover", "轉機停留"], ["connection", "轉機（銜接航班）"], ["gate", "登機門"],
+        ["checked through", "行李直掛到目的地"], ["I'm all set", "我都好了／沒問題了"]
       ],
-      "notes": []
+      "notes": [
+        ["Is the flight full?", "Useful when you want an aisle or window seat and aren't sure there are any left."],
+        ["make my connection", "= catch my connecting flight (趕上轉機)."]
+      ]
     },
     {
       "id": "airport-gate-delay",
       "cat": "airport",
       "title": "Finding the Gate & Flight Delay",
       "zh": "找登機門・班機延誤",
-      "desc": "Finding Gate A12, checking directions, and dealing with a delay.",
+      "desc": "Asking the way to Gate A12, checking you're going the right way, and finding out the flight is delayed.",
       "parts": [
-        { "lines": [
-          ["Airport Staff", "Are you looking for something?"],
-          ["You", "I've no idea where Gate A12 is. Could you please show me the way?"],
+        { "title": "Finding the Gate", "lines": [
+          ["Airport Staff", "Hi there. Are you looking for something?"],
+          ["You", "Yes. I've no idea where Gate A12 is. Could you please show me the way?"],
+          ["Airport Staff", "Sure. Go straight ahead, then take the escalator up to the next floor."],
           ["You", "So I go straight and take the escalator up?"],
           ["Airport Staff", "Yes, that's right. Then follow the signs for Gate A."],
-          ["You", "Is this the right way to Gate A?"],
-          ["Airport Staff", "Yes, you're going the right way."],
-          ["You", "How long will the flight be delayed?"],
+          ["You", "Thank you!"],
+          ["You", "Excuse me, is this the right way to Gate A?"],
+          ["Airport Staff", "Yes, you're going the right way. Gate A12 is at the end on your left."]
+        ]},
+        { "title": "Flight Delay", "lines": [
+          ["You", "Excuse me. My flight is showing as delayed. How long will the flight be delayed?"],
           ["Airport Staff", "It looks like the flight will be delayed by about an hour."],
+          ["You", "Oh no. I've already booked an Aircoach in Dublin. I hope the delay won't mess up my schedule."],
           ["Airport Staff", "What time is your Aircoach booking for?"],
           ["You", "It's at 10 o'clock on Monday morning."],
-          ["You", "I've already booked an Aircoach. I hope the delay won't mess up my schedule."]
+          ["Airport Staff", "You should still have enough time. Please keep checking the flight status on the screens."],
+          ["You", "OK, I will. Thank you."]
         ]}
       ],
       "sentences": [
@@ -80,128 +95,146 @@
         "So I go straight and take the escalator up?",
         "Is this the right way to Gate A?",
         "How long will the flight be delayed?",
-        "I've already booked an Aircoach. I hope the delay won't mess up my schedule."
+        "I've already booked an Aircoach. I hope the delay won't mess up my schedule.",
+        "It's at 10 o'clock on Monday morning."
       ],
       "vocab": [
-        ["gate", "登機門"], ["escalator", "手扶梯"], ["delay", "延誤"], ["delayed", "被延誤的"],
-        ["Aircoach", "都柏林機場巴士"], ["connecting flight", "轉乘航班"], ["flight status", "航班狀態"]
+        ["gate", "登機門"], ["escalator", "手扶梯"], ["sign", "指示牌"], ["delay", "延誤"],
+        ["delayed", "被延誤的"], ["Aircoach", "都柏林機場巴士"], ["flight status", "航班狀態"],
+        ["mess up", "打亂"]
       ],
-      "notes": []
+      "notes": [
+        ["I've no idea...", "Irish/UK casual way to say \"I have no idea...\"."],
+        ["mess up my schedule", "Casual and natural: 打亂我的行程."]
+      ]
     },
     {
       "id": "airport-transfer",
       "cat": "airport",
       "title": "Transfer Desk, Boarding Pass & Gate Change",
       "zh": "轉機櫃台・登機證・換登機門",
-      "desc": "Confirming the transfer route, boarding pass, walking time, and a gate change.",
+      "desc": "In Istanbul: getting the boarding pass for the next flight, asking the walking time, and dealing with a gate change.",
       "parts": [
-        { "lines": [
+        { "title": "Transfer Desk", "lines": [
           ["Airport Staff", "Can I help you?"],
           ["You", "Yes. Is this the right way to Gate 21? I need to connect to Dublin."],
-          ["Airport Staff", "Do you already have your boarding pass?"],
-          ["You", "Yes, I've got it already."],
-          ["You", "No, where can I get the boarding pass for my next flight?"],
-          ["Airport Staff", "You can get it at the transfer desk."],
+          ["Airport Staff", "Do you already have your boarding pass for Dublin?"],
+          ["You", "No. Where can I get the boarding pass for my next flight?"],
+          ["Airport Staff", "You can get it at the transfer desk, just over there."],
           ["You", "Is there a line for picking up the boarding pass?"],
           ["Airport Staff", "Yes, please join that line."],
           ["You", "If I already have my boarding pass, I won't need to line up, right?"],
-          ["Airport Staff", "That's right, as long as you don't need anything else from the transfer desk."],
+          ["Airport Staff", "That's right, as long as you don't need anything else from the transfer desk."]
+        ]},
+        { "title": "Walking to the Gate", "lines": [
           ["You", "How long is the walk from here to Gate 21?"],
           ["Airport Staff", "It should take about ten minutes."],
-          ["You", "Could the gate be changed again?"],
-          ["Airport Staff", "It's possible, so please keep an eye on the screens."],
+          ["You", "Could the gate change?"],
+          ["Airport Staff", "It's possible, so please keep an eye on the screens."]
+        ]},
+        { "title": "Gate Change", "lines": [
           ["You", "Excuse me, my gate has changed to 27. Where should I go?"],
-          ["Airport Staff", "Follow the signs to Gate 27."],
+          ["Airport Staff", "Follow the signs to Gate 27. It's about five minutes from here."],
           ["You", "But my boarding pass still says Gate 21. Is that OK?"],
-          ["Airport Staff", "Yes. The information on the airport screens is usually the latest."],
-          ["Airport Staff", "Your flight number is TK1234, right?"],
-          ["You", "Yes."]
+          ["Airport Staff", "Yes. The information on the airport screens is usually the latest. Your flight number is TK1234, right?"],
+          ["You", "Yes, that's right."],
+          ["Airport Staff", "Then Gate 27 is correct. Have a good flight!"]
         ]}
       ],
       "sentences": [
         "Is this the right way to Gate 21? I need to connect to Dublin.",
         "Where can I get the boarding pass for my next flight?",
+        "Is there a line for picking up the boarding pass?",
         "If I already have my boarding pass, I won't need to line up, right?",
         "How long is the walk from here to Gate 21?",
-        "Could the gate be changed again?",
+        "Could the gate change?",
         "Excuse me, my gate has changed to 27. Where should I go?",
         "But my boarding pass still says Gate 21. Is that OK?"
       ],
       "vocab": [
-        ["transfer desk", "轉機櫃台"], ["line up", "排隊"], ["boarding pass", "登機證"],
-        ["gate change", "更換登機門"], ["flight number", "航班號碼"], ["airport screens", "機場航班顯示螢幕"],
-        ["connection", "轉機（銜接航班）"]
+        ["transfer desk", "轉機櫃台"], ["connect to", "轉機到"], ["line up", "排隊"], ["join the line", "去排隊"],
+        ["gate change", "更換登機門"], ["flight number", "航班號碼"], ["keep an eye on", "留意"],
+        ["airport screens", "機場航班顯示螢幕"]
       ],
-      "notes": []
+      "notes": [
+        ["keep an eye on the screens", "= keep checking the screens (隨時留意螢幕)."]
+      ]
     },
     {
       "id": "airport-security-missed",
       "cat": "airport",
-      "title": "Security, Missed Connection & Baggage",
+      "title": "Security Again, Missed Connection & Baggage",
       "zh": "再次安檢・錯過轉機・行李",
-      "desc": "Finding out that security is required again and asking what happens if a delay causes a missed connection.",
+      "desc": "Finding out you need to go through security again, worrying about missing the connection after a delay, and asking about your checked bag.",
       "parts": [
         { "lines": [
-          ["You", "Excuse me. I already have my next flight boarding pass. Do I still need to go to the transfer desk?"],
-          ["Airport Staff", "If you already have your boarding pass, you may not need to go to the transfer desk. But you still need to go through security."],
+          ["You", "Excuse me. I already have my boarding pass for the next flight. Do I still need to go to the transfer desk?"],
+          ["Airport Staff", "If you already have your boarding pass, you don't need to go to the transfer desk. But you still need to go through security."],
           ["You", "You mean I have to go through security once again?"],
           ["Airport Staff", "Yes, that's right."],
           ["You", "How long does it usually take to go through security?"],
           ["Airport Staff", "It depends, but it can take around 15 to 20 minutes."],
-          ["You", "I'm afraid I can't catch my flight."],
-          ["Airport Staff", "If your connection is missed because of a delay, please speak to the airline staff."],
-          ["You", "If I miss my connecting flight because of a delay, will the airline arrange the next flight for me?"],
-          ["Airport Staff", "They should help you arrange another flight."],
+          ["You", "Oh no. My first flight was delayed. I'm afraid I'll miss my connecting flight."],
+          ["Airport Staff", "If you miss your connection because of a delay, please speak to the airline staff at the transfer desk."],
+          ["You", "Will the airline arrange the next flight for me?"],
+          ["Airport Staff", "Yes, they should help you arrange another flight."],
           ["You", "But how about my baggage? Will it be transferred to the next flight?"],
           ["Airport Staff", "If your baggage is checked through to Dublin, it will normally be transferred automatically."],
-          ["You", "So, do I have to take my baggage?"],
-          ["Airport Staff", "If it's checked through to Dublin, you normally don't need to collect it in Istanbul."],
+          ["You", "So I don't need to collect my baggage here?"],
+          ["Airport Staff", "That's right. You don't need to collect it in Istanbul."],
           ["You", "So I just go to the new boarding gate, right?"],
           ["Airport Staff", "Yes. Please check the airport screens for the latest gate information."]
         ]}
       ],
       "sentences": [
+        "Do I still need to go to the transfer desk?",
         "You mean I have to go through security once again?",
         "How long does it usually take to go through security?",
-        "I'm afraid I can't catch my flight.",
+        "My first flight was delayed. I'm afraid I'll miss my connecting flight.",
         "If I miss my connecting flight because of a delay, will the airline arrange the next flight for me?",
         "But how about my baggage? Will it be transferred to the next flight?",
-        "So, do I have to take my baggage?",
+        "So I don't need to collect my baggage here?",
         "So I just go to the new boarding gate, right?"
       ],
       "vocab": [
         ["go through security", "通過安檢"], ["miss a flight", "錯過班機"], ["connecting flight", "轉乘航班"],
-        ["arrange another flight", "安排其他班機"], ["baggage", "行李"], ["transfer", "轉運；轉機"],
+        ["arrange another flight", "安排其他班機"], ["airline staff", "航空公司人員"], ["transfer", "轉運"],
         ["collect baggage", "領取行李"], ["boarding gate", "登機門"]
       ],
-      "notes": []
+      "notes": [
+        ["I'm afraid I'll...", "Use \"I'm afraid\" to say you're worried something bad will happen (恐怕…)."],
+        ["collect my baggage", "More natural than \"take my baggage\" when you mean picking it up from the airport."]
+      ]
     },
     {
       "id": "airport-security-boarding",
       "cat": "airport",
       "title": "Security Check & Boarding",
       "zh": "安檢・登機",
-      "desc": "Going through security, checking personal items, finding Gate 27, and boarding.",
+      "desc": "Going through security, having your bag checked, finding Gate 27, and boarding.",
       "parts": [
-        { "lines": [
+        { "title": "Security", "lines": [
           ["Security Staff", "Do you have your boarding pass and passport ready?"],
           ["You", "Yes, here you are."],
           ["Security Staff", "Please take your liquids and laptop out of your bag."],
           ["You", "All the liquids?"],
-          ["Security Staff", "Yes, please."],
+          ["Security Staff", "Yes, please. Put them in the tray."],
           ["You", "How about the laptop?"],
           ["Security Staff", "Please take that out too."],
           ["You", "Should I take off my coat?"],
           ["Security Staff", "Yes, please."],
           ["You", "How about my shoes?"],
           ["Security Staff", "You can keep your shoes on."],
-          ["You", "OK, what's wrong? What's the problem?"],
-          ["Security Staff", "We just need to check your bag. Do you have any electronics inside?"],
+          ["Security Staff", "Excuse me, could you come over here, please? We need to check your bag."],
+          ["You", "OK. What's the problem?"],
+          ["Security Staff", "Do you have any electronics inside?"],
           ["You", "Yes, I have a camera and a power bank."],
-          ["Security Staff", "Please take them out of your bag."],
+          ["Security Staff", "Please take them out of your bag. Is this your camera?"],
           ["You", "Yes, it's my camera."],
-          ["Security Staff", "That's fine. We'll just have a quick look."],
-          ["You", "Could you please show me the direction to Gate 27?"],
+          ["Security Staff", "That's fine. We'll just have a quick look. OK, you can go."]
+        ]},
+        { "title": "Boarding", "lines": [
+          ["You", "Excuse me, could you tell me the way to Gate 27?"],
           ["Airport Staff", "Sure. Go straight ahead and follow the signs to Gate 27."],
           ["You", "Is boarding starting now?"],
           ["Airport Staff", "Yes, boarding has just started."],
@@ -215,18 +248,20 @@
         "How about the laptop?",
         "Should I take off my coat?",
         "How about my shoes?",
-        "OK, what's wrong? What's the problem?",
+        "OK. What's the problem?",
         "Yes, I have a camera and a power bank.",
-        "Could you please show me the direction to Gate 27?",
+        "Could you tell me the way to Gate 27?",
         "Is boarding starting now?",
         "Is this line for TK1234?"
       ],
       "vocab": [
-        ["liquids", "液體"], ["laptop", "筆電"], ["coat", "外套"], ["shoes", "鞋子"],
-        ["security check", "安全檢查"], ["camera", "相機"], ["power bank", "行動電源"],
-        ["gate", "登機門"], ["boarding", "登機"]
+        ["liquids", "液體"], ["laptop", "筆電"], ["tray", "安檢置物籃"], ["coat", "外套"], ["shoes", "鞋子"],
+        ["keep ... on", "（衣物）不用脫"], ["security check", "安全檢查"], ["electronics", "電子產品"],
+        ["power bank", "行動電源"], ["boarding", "登機"]
       ],
-      "notes": []
+      "notes": [
+        ["Could you tell me the way to...?", "More natural than \"show me the direction to...\" when asking for directions."]
+      ]
     },
     {
       "id": "flight-seat",
@@ -235,33 +270,41 @@
       "zh": "機上：找座位・安頓",
       "desc": "Boarding the aircraft, finding your seat, storing your carry-on bag, asking for a blanket, using the toilet before takeoff, and handling a seat-belt problem.",
       "parts": [
-        { "lines": [
+        { "title": "Finding Your Seat", "lines": [
           ["Cabin Crew", "Good evening. Welcome aboard. May I see your boarding pass, please?"],
           ["You", "Sure, here you are."],
-          ["Cabin Crew", "Your seat is 18A. It's just down the aisle on your left."],
-          ["You", "Excuse me. I thought I booked an aisle seat."],
-          ["Cabin Crew", "Let me check your boarding pass."],
-          ["You", "I made a mistake, sorry."],
-          ["Cabin Crew", "Your seat is actually 18C. That's an aisle seat."],
+          ["Cabin Crew", "Your seat is down the aisle on your left."],
+          ["You", "Excuse me. This is 18A, a window seat. I thought I booked an aisle seat."],
+          ["Cabin Crew", "Let me check your boarding pass... Your seat is actually 18C. That's the aisle seat."],
+          ["You", "Oh, I made a mistake. Sorry!"],
+          ["Cabin Crew", "No problem at all."]
+        ]},
+        { "title": "Carry-on Bag & Blanket", "lines": [
           ["You", "May I ask where I can put my carry-on bag?"],
           ["Cabin Crew", "You can put it in the overhead bin above your seat."],
           ["You", "Oh, that one's full. Is it OK if I put my bag in that overhead bin?"],
           ["Cabin Crew", "Yes, that's fine. You can put it there."],
           ["Cabin Crew", "Would you like a pillow or a blanket?"],
-          ["You", "Blanket, thank you."],
+          ["You", "Blanket, thank you."]
+        ]},
+        { "title": "Toilet Before Takeoff", "lines": [
           ["You", "Excuse me, can I use the toilet?"],
-          ["Cabin Crew", "Sure, but we're about to close the cabin doors. I'd recommend using the toilet now if you need to."],
+          ["Cabin Crew", "Sure, but we're about to close the cabin doors, so please go now. Go straight and turn right."],
           ["You", "Go straight and turn right?"],
-          ["Cabin Crew", "That's right. It's just ahead on your right."],
+          ["Cabin Crew", "That's right. It's just ahead on your right."]
+        ]},
+        { "title": "Seat Belt Problem", "lines": [
           ["You", "Excuse me. I can't fasten my seat belt. It seems something is wrong."],
           ["Cabin Crew", "Let me have a look. I'm sorry about that. Let me get you another seat."],
           ["You", "An aisle seat would be better. Is that OK?"],
           ["Cabin Crew", "Sure. Let me see if I can find you an aisle seat."],
+          ["Cabin Crew", "Seat 22C is free. Please follow me."],
           ["You", "OK, thank you."]
         ]}
       ],
       "sentences": [
         "I thought I booked an aisle seat.",
+        "Oh, I made a mistake. Sorry!",
         "Where can I put my carry-on bag?",
         "Oh, that one's full. Is it OK if I put my bag in that overhead bin?",
         "Blanket, thank you.",
@@ -269,15 +312,12 @@
         "Go straight and turn right?",
         "I can't fasten my seat belt. It seems something is wrong.",
         "An aisle seat would be better. Is that OK?",
-        "OK, thank you.",
-        "Excuse me. Could I have some water, please?",
-        "Excuse me. Could you help me with this?",
-        "Excuse me. Could I have a blanket, please?"
+        "Excuse me. Could you help me with this?"
       ],
       "vocab": [
         ["welcome aboard", "歡迎登機"], ["cabin", "機艙"], ["aisle", "走道"], ["aisle seat", "靠走道座位"],
-        ["carry-on bag", "隨身行李"], ["overhead bin", "頭頂置物櫃"], ["blanket", "毯子"],
-        ["toilet", "廁所"], ["seat belt", "安全帶"], ["fasten", "繫緊"], ["take off", "起飛"]
+        ["carry-on bag", "隨身行李"], ["overhead bin", "頭頂置物櫃"], ["pillow", "枕頭"], ["blanket", "毯子"],
+        ["toilet", "廁所"], ["seat belt", "安全帶"], ["fasten", "繫緊"], ["takeoff", "起飛"]
       ],
       "notes": [
         ["How to get a flight attendant's attention", "\"Excuse me\" is the easiest and safest way. You can also use the call button when appropriate."]
@@ -286,20 +326,20 @@
     {
       "id": "flight-meal-landing",
       "cat": "flight",
-      "title": "On Board: Meal to Landing & Baggage Claim",
-      "zh": "機上：餐點到降落・領行李",
-      "desc": "Continuing the flight from meals and comfort to landing, leaving the aircraft, and finding baggage.",
+      "title": "On Board: Meals to Landing",
+      "zh": "機上：餐點到降落",
+      "desc": "Drinks, snacks and the meal, reclining your seat, the screen and toilet, landing, and getting your bag down.",
       "parts": [
-        { "lines": [
+        { "title": "Drinks & Meal", "lines": [
           ["Cabin Crew", "Would you like something to drink?"],
           ["You", "What do you have?"],
+          ["Cabin Crew", "We have water, orange juice, apple juice, tea, and coffee."],
           ["You", "Apple juice, please. Just half a cup."],
           ["Cabin Crew", "Would you like something to eat?"],
           ["You", "Do you have any snacks?"],
           ["Cabin Crew", "Yes, we have some cookies and peanuts."],
           ["You", "Peanuts, please."],
-          ["You", "Could I have a blanket, please? I'm a little cold."],
-          ["Cabin Crew", "Would you like chicken or pasta?"],
+          ["Cabin Crew", "For dinner, would you like chicken or pasta?"],
           ["You", "Pasta, please."],
           ["Cabin Crew", "Would you like some bread?"],
           ["You", "Yes, please."],
@@ -310,40 +350,43 @@
           ["You", "Much better, thank you very much."],
           ["Cabin Crew", "Are you finished with your meal?"],
           ["You", "Yes, I'm done. Thank you."],
+          ["You", "Excuse me. Could I have some water, please?"],
+          ["Cabin Crew", "Of course. Here you are."]
+        ]},
+        { "title": "During the Flight", "lines": [
           ["You", "Can I recline my seat?"],
           ["Cabin Crew", "Yes, that's fine. You can recline your seat now."],
-          ["You", "OK, I'll put my seat back up."],
           ["You", "Excuse me, there seems to be something wrong with the screen."],
           ["Cabin Crew", "I'm afraid it's not working. Would you like me to reset it?"],
           ["You", "Sure, please."],
-          ["Cabin Crew", "I'll reset it for you. It should work now."],
+          ["Cabin Crew", "I've reset it for you. It should work now."],
           ["You", "It works, thank you."],
           ["You", "Can I use the toilet now?"],
-          ["Cabin Crew", "The lavatory is just behind you, on your left."],
+          ["Cabin Crew", "Yes. The lavatory is just behind you, on your left."],
           ["You", "The left one?"],
+          ["Cabin Crew", "Yes, that's right."],
           ["You", "Is anyone in there?"],
-          ["Cabin Crew", "No, it's free."],
+          ["Cabin Crew", "No, it's free."]
+        ]},
+        { "title": "Landing", "lines": [
           ["Cabin Crew", "We'll be landing in Dublin in about 30 minutes. Please fasten your seat belts and make sure your seat backs and tray tables are in their upright positions."],
-          ["Cabin Crew", "Are you all set for landing?"],
+          ["Cabin Crew", "Excuse me, could you put your seat back up, please?"],
+          ["You", "Oh, sorry. I'll put my seat back up."],
+          ["Cabin Crew", "Thank you. Are you all set for landing?"],
           ["You", "Yes, I'm all set."],
-          ["You", "Excuse me, could I get my bag?"],
+          ["You", "Excuse me, could I get my bag from the overhead bin?"],
           ["Passenger", "Oh, sure. Go ahead."],
-          ["You", "Thank you."],
-          ["You", "Excuse me, where can I find my baggage carousel number?"],
-          ["Airport Staff", "Your baggage is on carousel 7."],
-          ["You", "TUR123's baggage is on carousel 7, right?"],
-          ["Airport Staff", "Yes, that's right. Carousel 7."],
-          ["You", "Excuse me, is this your suitcase?"]
+          ["You", "Thank you."]
         ]},
         { "title": "Captain's Announcements — Listening Practice", "lines": [
           ["Captain", "Ladies and gentlemen, this is your captain speaking. Welcome aboard."],
           ["Captain", "We'll be cruising at an altitude of 36,000 feet."],
-          ["Captain", "Our estimated time of arrival in Dublin is..."],
+          ["Captain", "Our estimated time of arrival in Dublin is 9:45 a.m."],
           ["Captain", "We may experience some turbulence. Please remain seated with your seat belt fastened."],
           ["Captain", "We have started our descent into Dublin."],
           ["Captain", "We'll be landing in Dublin shortly."],
           ["Captain", "Please fasten your seat belts and return your seat backs to the upright position."],
-          ["Captain", "Welcome to Dublin. The local time is..."],
+          ["Captain", "Welcome to Dublin. The local time is 9:40 a.m."],
           ["Captain", "Please remain seated until the seat belt sign has been switched off."]
         ]}
       ],
@@ -351,35 +394,31 @@
         "What do you have?",
         "Apple juice, please. Just half a cup.",
         "Do you have any snacks?",
-        "Could I have a blanket, please? I'm a little cold.",
-        "I think my meal isn't warm enough.",
+        "Excuse me, I think my meal isn't warm enough.",
         "OK, thank you. I appreciate it.",
         "Much better, thank you very much.",
         "Yes, I'm done. Thank you.",
+        "Could I have some water, please?",
         "Can I recline my seat?",
-        "I'll put my seat back up.",
         "There seems to be something wrong with the screen.",
-        "Sure, please.",
         "It works, thank you.",
         "Can I use the toilet now?",
         "Is anyone in there?",
+        "I'll put my seat back up.",
         "Yes, I'm all set.",
-        "Excuse me, could I get my bag?",
-        "Where can I find my baggage carousel number?",
-        "TUR123's baggage is on carousel 7, right?",
-        "Excuse me, is this your suitcase?"
+        "Excuse me, could I get my bag from the overhead bin?"
       ],
       "vocab": [
-        ["meal", "餐點"], ["snacks", "點心"], ["blanket", "毯子"], ["warm enough", "夠熱"],
-        ["recline", "（椅背）往後倒"], ["screen", "螢幕"], ["reset", "重新啟動"], ["toilet", "廁所"],
-        ["lavatory", "（機上）洗手間"], ["landing", "降落"], ["remain seated", "留在座位上"],
-        ["baggage carousel", "行李轉盤"], ["suitcase", "行李箱"], ["turbulence", "亂流"],
+        ["meal", "餐點"], ["snacks", "點心"], ["warm enough", "夠熱"], ["recline", "（椅背）往後倒"],
+        ["put my seat back up", "把椅背調直"], ["screen", "螢幕"], ["reset", "重新啟動"],
+        ["lavatory", "（機上）洗手間"], ["tray table", "餐桌板"], ["landing", "降落"],
+        ["upright position", "直立位置"], ["remain seated", "留在座位上"], ["turbulence", "亂流"],
         ["cruising altitude", "巡航高度"], ["estimated time of arrival", "預計抵達時間"],
-        ["descent", "下降"], ["upright position", "直立位置"], ["local time", "當地時間"]
+        ["descent", "下降"], ["local time", "當地時間"]
       ],
       "notes": [
-        ["suitcase / bag / luggage", "suitcase = 行李箱；bag = 包包，也泛指一件行李；luggage / baggage = 行李總稱。"],
-        ["toilet / lavatory", "toilet 在英國、愛爾蘭最自然；lavatory 是航空用語，比較正式。"]
+        ["toilet / lavatory", "toilet 在英國、愛爾蘭最自然；lavatory 是航空用語，比較正式。"],
+        ["Is anyone in there?", "Ask this (or knock) when you're not sure if the toilet is free. The sign says \"Occupied\" or \"Vacant\"."]
       ]
     },
     {
@@ -399,7 +438,7 @@
           ["Immigration Officer", "Where are you staying?"],
           ["You", "I'm staying at the Riverside Hotel, on O'Connell Street."],
           ["Immigration Officer", "Do you have a return ticket?"],
-          ["You", "Yes."],
+          ["You", "Yes, I do. Here it is."],
           ["Immigration Officer", "What do you do for a living?"],
           ["You", "I work in an office."],
           ["Immigration Officer", "Have you been to Ireland before?"],
@@ -409,7 +448,7 @@
           ["Immigration Officer", "Do you have anything else planned during your stay?"],
           ["You", "Just some sightseeing."],
           ["Immigration Officer", "Do you have enough money for your stay?"],
-          ["You", "Sure. I have 500 euros and a credit card."],
+          ["You", "Yes. I have 500 euros and a credit card."],
           ["Immigration Officer", "All right. Everything looks good. Enjoy your stay in Ireland."],
           ["You", "Thank you. Have a good day!"]
         ]}
@@ -418,43 +457,41 @@
         "I'm here for a vacation.",
         "I'm staying for 8 days.",
         "I'm staying at the Riverside Hotel, on O'Connell Street.",
+        "Yes, I do. Here it is.",
+        "I work in an office.",
         "No, it's my first time in Ireland.",
         "I'm traveling alone.",
         "Just some sightseeing.",
         "I have 500 euros and a credit card."
       ],
       "vocab": [
-        ["purpose of your visit", "來訪目的"], ["stay", "停留；住宿"], ["return ticket", "回程機票"],
-        ["work in an office", "在辦公室上班"], ["sightseeing", "觀光"], ["credit card", "信用卡"]
+        ["immigration", "入境審查"], ["purpose of your visit", "來訪目的"], ["stay", "停留；住宿"],
+        ["return ticket", "回程機票"], ["for a living", "（從事）職業"], ["work in an office", "在辦公室上班"],
+        ["sightseeing", "觀光"], ["credit card", "信用卡"]
       ],
       "notes": [
-        ["Questions to recognise", "What's the purpose of your visit? / How long are you staying in Ireland? / Where are you staying? / Do you have a return ticket?"]
+        ["Questions to recognise", "What's the purpose of your visit? / How long are you staying in Ireland? / Where are you staying? / Do you have a return ticket?"],
+        ["vacation / holiday", "Irish people usually say \"I'm here on holiday\". \"For a vacation\" is also understood."]
       ]
     },
     {
       "id": "arrival-baggage-customs",
       "cat": "arrival",
-      "title": "Baggage Reclaim, Customs & Delayed Baggage",
-      "zh": "領行李・海關・行李延誤",
-      "desc": "Collecting baggage, going through customs, and reporting delayed baggage.",
+      "title": "Baggage Reclaim, Delayed Baggage & Customs",
+      "zh": "領行李・行李延誤・海關",
+      "desc": "Finding your carousel, someone picking up your bag by mistake, reporting a bag that didn't arrive, and going through customs.",
       "parts": [
         { "title": "Baggage Reclaim", "lines": [
+          ["You", "Excuse me, which carousel is the baggage from TK1234 on?"],
+          ["Airport Staff", "Your baggage is on carousel 7."],
+          ["You", "Carousel 7, right?"],
+          ["Airport Staff", "Yes, that's right. Carousel 7."],
           ["Passenger", "Excuse me, are you waiting for this bag?"],
           ["You", "Yes, I think it's mine."],
           ["Passenger", "Oh, sorry. I think I picked up the wrong bag."],
           ["You", "It's OK. It happens sometimes."]
         ]},
-        { "title": "Customs", "lines": [
-          ["Customs Officer", "Do you have anything to declare?"],
-          ["You", "No, I don't have anything to declare."],
-          ["Customs Officer", "Are you carrying any food, plants, or animal products?"],
-          ["You", "No, I didn't bring any food, plants, or animal products from my country. But I have some bread from the meal on the flight."],
-          ["Customs Officer", "What kind of bread is it?"],
-          ["You", "It's just some bread from the meal on the flight."],
-          ["Customs Officer", "All right. That's fine. You can go through."],
-          ["You", "Thank you. Have a good day!"]
-        ]},
-        { "title": "Delayed Baggage", "lines": [
+        { "title": "If Your Bag Doesn't Arrive", "lines": [
           ["You", "Excuse me, has the carousel stopped? I haven't found my baggage."],
           ["Airport Staff", "Yes, the carousel has stopped. What does your bag look like?"],
           ["You", "It's black, probably 24 inches. The brand is Departure, and it has a combination lock."],
@@ -465,39 +502,50 @@
           ["You", "Oh... so when can I get my baggage?"],
           ["Airport Staff", "We expect it to arrive on the next flight. We can arrange to have it delivered to your hotel once it arrives."],
           ["You", "So, you'll deliver my baggage to my hotel?"],
-          ["Airport Staff", "Yes. We'll contact you when your bag arrives, and we'll arrange delivery to your hotel."],
+          ["Airport Staff", "Yes. We'll contact you when your bag arrives, and arrange delivery to your hotel."],
           ["You", "I can give you my hotel's address. Also, my phone only has internet access, so I can't receive phone calls."],
-          ["Airport Staff", "That's fine. We'll send you an email or a text message when your bag arrives."],
+          ["Airport Staff", "That's fine. We'll send you an email or a text message instead."],
           ["You", "OK, I'll give you my email address. Do you know when my baggage will be delivered to my hotel?"],
-          ["Airport Staff", "It should be delivered by tomorrow, but we'll let you know as soon as it arrives."],
+          ["Airport Staff", "It should be delivered by tomorrow."],
+          ["You", "If I'm out when my baggage arrives, can the hotel receive it for me?"],
+          ["Airport Staff", "Yes, that's fine. We'll leave it at the front desk."],
           ["You", "If I don't get my baggage tomorrow, who should I contact?"],
           ["Airport Staff", "You can contact our baggage services team. The contact information is on this form."],
           ["You", "OK, I see. Thanks for your help."],
-          ["Airport Staff", "You're welcome. We'll contact you as soon as your bag arrives."],
-          ["You", "If I'm out when my baggage arrives, can the hotel receive it for me?"],
-          ["Airport Staff", "Yes, that's fine. We'll deliver it to the front desk."],
-          ["You", "OK, thank you. I'll be on my way."],
           ["Airport Staff", "You're welcome. I hope you get your bag soon. Have a nice day!"],
           ["You", "Thanks. You too."]
+        ]},
+        { "title": "Customs", "lines": [
+          ["Customs Officer", "Do you have anything to declare?"],
+          ["You", "No, I don't have anything to declare."],
+          ["Customs Officer", "Are you carrying any food, plants, or animal products?"],
+          ["You", "No. I only have some bread from the meal on the plane. Is that OK?"],
+          ["Customs Officer", "That's fine. You can go through."],
+          ["You", "Thank you. Have a good day!"]
         ]}
       ],
       "sentences": [
+        "Which carousel is the baggage from TK1234 on?",
         "Excuse me, are you waiting for this bag?",
-        "I think I picked up the wrong bag.",
-        "I don't have anything to declare.",
-        "I haven't found my baggage.",
+        "It's OK. It happens sometimes.",
+        "Has the carousel stopped? I haven't found my baggage.",
         "It's black, probably 24 inches. The brand is Departure, and it has a combination lock.",
         "When can I get my baggage?",
+        "So, you'll deliver my baggage to my hotel?",
         "My phone only has internet access, so I can't receive phone calls.",
+        "If I'm out when my baggage arrives, can the hotel receive it for me?",
         "If I don't get my baggage tomorrow, who should I contact?",
-        "If I'm out when my baggage arrives, can the hotel receive it for me?"
+        "I don't have anything to declare.",
+        "I only have some bread from the meal on the plane. Is that OK?"
       ],
       "vocab": [
-        ["baggage reclaim", "行李提領區"], ["customs", "海關"], ["declare", "申報"], ["carousel", "行李轉盤"],
-        ["baggage tag", "行李條"], ["baggage tracking system", "行李追蹤系統"], ["delayed baggage", "延誤行李"],
-        ["combination lock", "密碼鎖"], ["front desk", "櫃台"]
+        ["baggage reclaim", "行李提領區"], ["carousel", "行李轉盤"], ["pick up the wrong bag", "拿錯行李"],
+        ["baggage tag", "行李條"], ["baggage tracking system", "行李追蹤系統"], ["combination lock", "密碼鎖"],
+        ["deliver", "遞送"], ["front desk", "櫃台"], ["baggage services", "行李服務處"],
+        ["customs", "海關"], ["declare", "申報"], ["animal products", "動物製品"]
       ],
       "notes": [
+        ["Order at the airport", "Landing → Immigration → Baggage reclaim → Customs. Report a missing bag before you leave the baggage hall."],
         ["Questions to recognise", "Do you have anything to declare? / What does your bag look like? / It looks like your bag hasn't arrived yet."]
       ]
     },
@@ -506,59 +554,57 @@
       "cat": "arrival",
       "title": "Dublin Airport → City Centre",
       "zh": "機場到市中心・買交通卡",
-      "desc": "Arriving at Dublin Airport, finding the Aircoach, travelling to the city centre, asking about the stop, and asking about a tourist transport pass.",
+      "desc": "Finding the Aircoach stop and asking where to get off, then buying a Leap Visitor Card for buses and the Luas.",
       "parts": [
-        { "lines": [
+        { "title": "Aircoach", "lines": [
+          ["You", "Excuse me, could you help me?"],
           ["Airport Staff", "Sure. What can I help you with?"],
-          ["You", "Excuse me, do you know where I can catch an Aircoach?"],
+          ["You", "I've booked an Aircoach. Do you know where I can catch it?"],
           ["Airport Staff", "Of course. The Aircoach stop is just outside the terminal."],
           ["You", "Does it go to the city centre?"],
           ["Airport Staff", "Yes, it does."],
-          ["You", "Can I pay with a credit card?"],
-          ["Airport Staff", "Yes, you can."],
           ["You", "How long does it take to get to O'Connell Street?"],
           ["Airport Staff", "It usually takes about 30 minutes, depending on traffic."],
           ["You", "Where should I get off?"],
-          ["Airport Staff", "You should get off at O'Connell Street."],
-          ["You", "I'm going to be in Dublin for a week. Is there a transport pass that's suitable for tourists?"],
-          ["Information Staff", "Yes, there are a few options."],
+          ["Airport Staff", "You should get off at O'Connell Street. The driver will announce it."],
+          ["You", "Great, thank you!"]
+        ]},
+        { "title": "Transport Pass", "lines": [
+          ["You", "Hi. I'm going to be in Dublin for a week. Is there a transport pass that's suitable for tourists?"],
+          ["Information Staff", "Yes, there are a few options. What will you mainly be using?"],
           ["You", "I'll mainly be using buses and the Luas."],
           ["Information Staff", "In that case, I'd recommend a Leap Visitor Card."],
           ["You", "How much is this card? Can I use it for seven days?"],
           ["Information Staff", "The seven-day card costs €40. You can use it on Dublin Bus and the Luas."],
           ["You", "So, can I buy it here?"],
           ["Information Staff", "Yes, you can."],
-          ["You", "Okay, I'll take one, please."],
-          ["You", "Can I pay with a credit card?"],
-          ["Information Staff", "Yes, of course."],
+          ["You", "Okay, I'll take one, please. Can I pay by card?"],
+          ["Information Staff", "Yes, of course. Just tap your card here."],
           ["You", "Okay, thank you!"]
         ]}
       ],
       "sentences": [
-        "Excuse me, do you know where I can catch an Aircoach?",
+        "I've booked an Aircoach. Do you know where I can catch it?",
         "Does it go to the city centre?",
-        "Can I pay by card?",
         "How long does it take to get to O'Connell Street?",
         "Where should I get off?",
         "I'm going to be in Dublin for a week.",
         "Is there a transport pass that's suitable for tourists?",
         "I'll mainly be using buses and the Luas.",
-        "How much is this card?",
-        "Can I use it for seven days?",
+        "How much is this card? Can I use it for seven days?",
         "Can I buy it here?",
-        "Okay, I'll take one, please."
+        "Okay, I'll take one, please. Can I pay by card?"
       ],
       "vocab": [
-        ["Aircoach", "都柏林機場巴士"], ["bus stop", "公車站"], ["city centre", "市中心"],
-        ["transport pass", "交通票卡"], ["tourist", "觀光客"], ["fare", "車資"], ["ticket", "票"],
-        ["get on", "上車"], ["get off", "下車"], ["the Luas", "都柏林輕軌電車"],
-        ["Leap Visitor Card", "都柏林觀光交通卡"]
+        ["Aircoach", "都柏林機場巴士"], ["catch (a bus)", "搭上（公車）"], ["terminal", "航廈"],
+        ["city centre", "市中心"], ["traffic", "交通（車流）"], ["get off", "下車"],
+        ["transport pass", "交通票卡"], ["suitable for", "適合"], ["the Luas", "都柏林輕軌電車"],
+        ["Leap Visitor Card", "都柏林觀光交通卡"], ["tap your card", "感應刷卡"]
       ],
       "notes": [
         ["city centre", "Natural Dublin/UK-Irish wording; \"downtown\" is not the usual choice here."],
         ["get to + place", "How long does it take to get to O'Connell Street?"],
-        ["get off", "\"Where should I get off?\" is a simple natural question."],
-        ["suitable for tourists", "Natural when asking whether a pass is appropriate for visitors."],
+        ["catch a bus", "\"Catch\" is the everyday verb for taking a bus, train or the Luas."],
         ["the Luas", "Use \"the\" when referring to Dublin's light-rail system."],
         ["pay by card / pay with a credit card", "Both are natural."]
       ]
@@ -568,21 +614,20 @@
       "cat": "hotel",
       "title": "Hotel Check-in & Staying at the Hotel",
       "zh": "飯店入住",
-      "desc": "Arriving at the hotel, checking in, asking about breakfast and room facilities, confirming check-out, leaving luggage after check-out, and finding the lift.",
+      "desc": "Checking in, asking about breakfast and room facilities, confirming check-out, leaving luggage after check-out, and finding the lift.",
       "parts": [
         { "lines": [
           ["Receptionist", "Good afternoon. Welcome to the Riverside Hotel. How can I help you?"],
           ["You", "Hello. I have a reservation. I'd like to check in."],
           ["Receptionist", "Certainly. May I have your passport, please?"],
           ["You", "Here you are."],
-          ["Receptionist", "Could you confirm your check-out date for me, please?"],
+          ["Receptionist", "Thank you. Could you confirm your check-out date for me, please?"],
           ["You", "October 20th."],
-          ["Receptionist", "Would you like me to explain the hotel facilities and breakfast arrangements?"],
-          ["You", "Yes, please."],
+          ["Receptionist", "Perfect. Here's your key card. You're in Room 214, on the second floor."],
           ["You", "Breakfast wasn't included in my reservation. If I want to have breakfast during my stay, how much is it?"],
           ["Receptionist", "It's €15 per person."],
           ["You", "Do I need to book it a day in advance?"],
-          ["Receptionist", "No, you don't."],
+          ["Receptionist", "No, you don't. Just let us know in the morning."],
           ["You", "Is there a fridge in the room?"],
           ["Receptionist", "Yes, there is."],
           ["You", "Is there a kettle in the room?"],
@@ -590,15 +635,15 @@
           ["You", "That's good. And what's the Wi-Fi password?"],
           ["Receptionist", "It's written on the key card holder."],
           ["You", "May I confirm the check-out time?"],
-          ["Receptionist", "Of course. Check-out is at 11:00 a.m."],
+          ["Receptionist", "Of course. Check-out is at 11 a.m."],
           ["You", "Could I leave my luggage here for a while after I check out?"],
           ["Receptionist", "Of course. What time will you be collecting it?"],
           ["You", "About 3 p.m."],
-          ["Receptionist", "No problem."],
+          ["Receptionist", "No problem. Just bring it to reception when you check out."],
           ["You", "Could you show me where the lift is, please?"],
           ["Receptionist", "Of course. It's just around the corner, next to the stairs."],
           ["You", "This way, right?"],
-          ["Receptionist", "Yes, that's right."]
+          ["Receptionist", "Yes, that's right. Enjoy your stay!"]
         ]}
       ],
       "sentences": [
@@ -611,18 +656,18 @@
         "What's the Wi-Fi password?",
         "May I confirm the check-out time?",
         "Could I leave my luggage here for a while after I check out?",
-        "About 3 p.m.",
         "Could you show me where the lift is, please?",
         "This way, right?"
       ],
       "vocab": [
         ["reservation", "預約；訂房"], ["check in", "入住"], ["check out", "退房"], ["key card", "房卡"],
-        ["facilities", "設施"], ["fridge", "冰箱"], ["kettle", "熱水壺"], ["Wi-Fi password", "Wi-Fi 密碼"],
-        ["luggage", "行李"], ["luggage storage", "行李寄放"], ["lift", "電梯（英／愛）"], ["stairs", "樓梯"],
-        ["a day in advance", "提前一天"]
+        ["key card holder", "房卡套"], ["second floor", "（英／愛）三樓"], ["fridge", "冰箱"],
+        ["kettle", "熱水壺"], ["Wi-Fi password", "Wi-Fi 密碼"], ["luggage", "行李"],
+        ["collect", "來拿"], ["lift", "電梯（英／愛）"], ["stairs", "樓梯"], ["a day in advance", "提前一天"]
       ],
       "notes": [
-        ["Baggage vs. Luggage", "Both mean the bags you travel with, and both are correct. Baggage is common in fixed airline expressions such as checked baggage and baggage claim. Luggage is common for travel bags, such as my luggage and luggage storage. Use the word that fits the expression, not the location."]
+        ["Floors in Ireland", "Ground floor = 1 樓, first floor = 2 樓, second floor = 3 樓."],
+        ["Baggage vs. Luggage", "Both mean the bags you travel with. Baggage is common in airline expressions (checked baggage, baggage reclaim); luggage is common for travel bags (my luggage, luggage storage)."]
       ]
     },
     {
@@ -630,7 +675,7 @@
       "cat": "hotel",
       "title": "Hotel Problems: Bathroom Light & Key Card",
       "zh": "飯店問題：浴室燈・房卡",
-      "desc": "After checking into the hotel, you discover a problem with the bathroom light. Later, you return to the hotel and find that your key card isn't working.",
+      "desc": "Calling reception about a flickering bathroom light, and later finding that your key card doesn't work.",
       "parts": [
         { "title": "Bathroom Light", "lines": [
           ["Receptionist", "Good evening. Reception. How can I help you?"],
@@ -641,10 +686,11 @@
           ["You", "Okay, thank you. How long will it take?"],
           ["Receptionist", "Someone should be up in about 10 minutes."],
           ["You", "Okay, I'll wait in the room."],
+          ["Maintenance", "Hello, maintenance. I'm here about the bathroom light."],
+          ["You", "Hi, please come in. It's this one."],
           ["Maintenance", "It looks like the bulb needs to be replaced. I'll replace it for you."],
-          ["You", "Okay, thank you for your help."],
           ["Maintenance", "There you go. It should be working properly now."],
-          ["You", "Great, it's working now. Thank you very much."]
+          ["You", "Great, it's working now. Thank you for your help."]
         ]},
         { "title": "Key Card", "lines": [
           ["Receptionist", "Good evening. How can I help you?"],
@@ -663,8 +709,8 @@
         "The light keeps flickering.",
         "How long will it take?",
         "I'll wait in the room.",
-        "Thank you for your help.",
-        "Great, it's working now. Thank you very much.",
+        "Hi, please come in. It's this one.",
+        "Great, it's working now. Thank you for your help.",
         "My key card isn't working.",
         "I can't get into my room.",
         "Two one four.",
@@ -672,19 +718,16 @@
         "Great! It works!"
       ],
       "vocab": [
-        ["light", "燈"], ["bathroom", "浴室"], ["flicker", "閃爍"], ["bulb", "燈泡"], ["replace", "更換"],
-        ["maintenance", "維修人員"], ["repair", "修理"], ["key card", "房卡"], ["expire", "過期"],
-        ["reprogram", "重新設定"], ["get into", "進入"], ["upstairs", "樓上"], ["shortly", "馬上；很快"]
+        ["reception", "櫃台"], ["bathroom", "浴室"], ["flicker", "閃爍"], ["bulb", "燈泡"], ["replace", "更換"],
+        ["maintenance", "維修人員"], ["send someone up", "派人上去"], ["key card", "房卡"], ["expire", "過期"],
+        ["reprogram", "重新設定"], ["get into", "進入"], ["upstairs", "樓上"]
       ],
       "notes": [
         ["I'm calling from Room 214.", "Natural when calling reception from your room."],
         ["There's something wrong with...", "Useful for reporting a problem."],
         ["The light keeps flickering.", "keep + V-ing means something continues to happen."],
-        ["How long will it take?", "Asks how long this particular repair will take."],
-        ["My key card isn't working.", "A natural way to report a key-card problem."],
-        ["Two one four.", "A natural way to say room 214."],
-        ["upstairs", "One word: go upstairs."],
-        ["Great! It works!", "Natural after the door opens successfully."]
+        ["Two one four.", "Say room numbers digit by digit. 0 is often said \"oh\" (305 = three oh five)."],
+        ["upstairs", "One word: go upstairs."]
       ]
     },
     {
@@ -692,30 +735,30 @@
       "cat": "hotel",
       "title": "Hotel: Heating & TV",
       "zh": "飯店：暖氣・電視",
-      "desc": "After returning to your room, you find it a little cold and need help using the heater. You also ask how to use the TV remote and whether Netflix, Disney+, or AirPlay are available.",
+      "desc": "Calling reception because the room is cold and you can't work the heater, then asking about the TV remote, Netflix and AirPlay.",
       "parts": [
         { "title": "Heating", "lines": [
+          ["Receptionist", "Good evening. Reception."],
           ["You", "Hello, I'm calling from Room 214. It's a little cold, and I don't know how to adjust the heater."],
           ["Receptionist", "No problem. There should be a control panel on the wall. Have you tried using it?"],
           ["You", "Yes, I've tried, but I still don't know how to use it."],
-          ["Receptionist", "Okay, no problem. I'll explain how to use it. First, press the power button. Then set the temperature to around 20 degrees."],
+          ["Receptionist", "Okay. First, press the power button. Then set the temperature to around 20 degrees."],
           ["You", "Okay. Do I need to leave it on all the time?"],
           ["Receptionist", "No, you don't. You can turn it off when you go out."],
           ["You", "Okay, I got it. Thanks for explaining."],
-          ["Receptionist", "You're welcome. Just let us know if you have any other problems."],
-          ["You", "Okay, if I have any other problems, I'll let you know."],
-          ["Receptionist", "Of course. Have a good evening!"]
+          ["Receptionist", "You're welcome. Just let us know if you have any other problems."]
         ]},
         { "title": "TV", "lines": [
-          ["You", "By the way, could you please show me how to use the TV remote? I always have trouble using hotel remotes."],
-          ["Receptionist", "Of course! It's pretty simple. Press this button to turn the TV on, and use these buttons to change the channels."],
+          ["You", "Actually, I have one more question. How do I use the TV remote? I always have trouble using hotel remotes."],
+          ["Receptionist", "Of course. Press the red button at the top to turn the TV on, and use the buttons marked CH to change the channels."],
           ["You", "How do I adjust the volume?"],
+          ["Receptionist", "Use the buttons marked VOL."],
           ["You", "Does the TV have Netflix or Disney+?"],
+          ["Receptionist", "It has Netflix, but not Disney+. You'll need to sign in with your own account."],
           ["You", "And can I use AirPlay on the TV?"],
-          ["Receptionist", "You can adjust the volume with these buttons. As for Netflix and Disney+, I'm not sure. Let me check for you."],
-          ["Receptionist", "Yes, the TV has Netflix, but you'll need to sign in with your own account. AirPlay isn't available, I'm afraid."],
-          ["You", "That's okay. I just want to make sure. Thank you."],
-          ["Receptionist", "You're very welcome. Enjoy the rest of your evening!"]
+          ["Receptionist", "I'm afraid AirPlay isn't available."],
+          ["You", "That's okay. I just wanted to make sure. Thank you."],
+          ["Receptionist", "You're very welcome. Have a good evening!"]
         ]}
       ],
       "sentences": [
@@ -723,29 +766,27 @@
         "I've tried, but I still don't know how to use it.",
         "Do I need to leave it on all the time?",
         "Okay, I got it. Thanks for explaining.",
-        "If I have any other problems, I'll let you know.",
-        "By the way, could you please show me how to use the TV remote?",
+        "Actually, I have one more question.",
+        "How do I use the TV remote?",
         "I always have trouble using hotel remotes.",
         "How do I adjust the volume?",
         "Does the TV have Netflix or Disney+?",
         "Can I use AirPlay on the TV?",
-        "That's okay. I just want to make sure."
+        "That's okay. I just wanted to make sure."
       ],
       "vocab": [
         ["heater", "暖氣機"], ["heating", "暖氣"], ["adjust", "調整"], ["temperature", "溫度"],
         ["control panel", "控制面板"], ["power button", "電源鍵"], ["turn on", "打開"], ["turn off", "關掉"],
         ["leave it on", "讓它一直開著"], ["TV remote", "電視遙控器"], ["volume", "音量"], ["channel", "頻道"],
-        ["sign in", "登入"], ["account", "帳號"], ["available", "可用的"], ["instructions", "使用說明"]
+        ["sign in", "登入"], ["account", "帳號"], ["available", "可用的"]
       ],
       "notes": [
         ["adjust the heater", "Use this when you don't know how to change the heating settings."],
-        ["turn the heater on", "Use this when you don't know how to switch the heater on."],
         ["leave it on", "Means keep it switched on."],
         ["Thanks for explaining.", "Natural for thanking someone for an explanation."],
-        ["By the way", "Natural when you suddenly remember another question."],
+        ["Actually, I have one more question.", "A natural way to add another question before the call ends."],
         ["TV remote", "Much more natural than \"television remote controller\"."],
-        ["have trouble + V-ing", "Useful for saying you have difficulty doing something."],
-        ["I'll let you know.", "Natural for saying you'll tell them later if needed."]
+        ["have trouble + V-ing", "Useful for saying you have difficulty doing something."]
       ]
     },
     {
@@ -753,83 +794,83 @@
       "cat": "hotel",
       "title": "Hotel Housekeeping & Extra Supplies",
       "zh": "飯店：打掃房間・加備品",
-      "desc": "Asking housekeeping to make up the room, deciding when to leave the room, and requesting fresh towels, hangers, and toilet paper.",
+      "desc": "Asking housekeeping to make up the room while you go out, then requesting fresh towels, hangers and toilet paper.",
       "parts": [
         { "title": "Making Up the Room", "lines": [
           ["Receptionist", "Good morning. Reception. How can I help you?"],
           ["You", "Good morning. I'm calling from Room 214. Could you please make up my room today?"],
           ["Receptionist", "Of course. What time would you like us to make up your room?"],
           ["You", "Is 2 p.m. okay?"],
-          ["Receptionist", "Yes, 2 p.m. should be fine. We'll make up your room then."],
+          ["Receptionist", "Yes, 2 p.m. should be fine."],
           ["You", "How long will it take?"],
-          ["Receptionist", "It should take about 30 minutes. We'll let you know when it's finished."],
+          ["Receptionist", "It should take about 30 minutes."],
           ["You", "Do I need to leave the room?"],
           ["Receptionist", "No, you don't. You can stay in the room if you like, but we'll need some space to clean."],
-          ["You", "Okay, but I think I'll go out for a while."],
-          ["Receptionist", "No problem. We'll have your room ready when you get back."],
+          ["You", "Okay, I think I'll go out for a while."],
           ["You", "Should I remove the \"Do Not Disturb\" sign so you can come in?"],
           ["Receptionist", "Yes, please. That way, housekeeping will know they can come in and clean your room."],
-          ["You", "Okay, then I'll be back around 2 p.m."],
-          ["Receptionist", "Perfect. We'll make up your room while you're out. Enjoy your afternoon!"]
+          ["You", "Okay. Then I'll be back around 3 p.m."],
+          ["Receptionist", "Perfect. Your room will be ready when you get back. Enjoy your afternoon!"]
         ]},
         { "title": "Fresh Towels & Extra Supplies", "lines": [
+          ["Receptionist", "Good evening. Reception."],
           ["You", "Hello, I'm calling from Room 214. It seems that housekeeping didn't leave any fresh towels."],
           ["Receptionist", "I'm sorry about that. How many towels do you need?"],
           ["You", "One bath towel and two hand towels, please."],
           ["Receptionist", "Of course. We'll bring them up to your room shortly."],
-          ["You", "By the way, could I have two more hangers, please?"],
+          ["You", "Could I also have two more hangers, please?"],
           ["Receptionist", "Of course. We'll bring two more hangers up with the towels."],
-          ["You", "That's great. Thank you!"],
-          ["You", "Oh, could you also bring me a roll of toilet paper, please?"],
-          ["Receptionist", "Of course. We'll bring you a roll of toilet paper along with the towels and hangers."],
-          ["You", "Thank you!"]
+          ["You", "Oh, and could you also bring me a roll of toilet paper, please?"],
+          ["Receptionist", "No problem. Towels, hangers and a roll of toilet paper. Anything else?"],
+          ["You", "No, that's all. Thank you!"]
         ]}
       ],
       "sentences": [
         "Could you please make up my room today?",
         "Is 2 p.m. okay?",
-        "How long will it take?",
         "Do I need to leave the room?",
-        "Okay, but I think I'll go out for a while.",
+        "I think I'll go out for a while.",
         "Should I remove the \"Do Not Disturb\" sign so you can come in?",
-        "Okay, then I'll be back around 2 p.m.",
+        "Then I'll be back around 3 p.m.",
         "It seems that housekeeping didn't leave any fresh towels.",
         "One bath towel and two hand towels, please.",
-        "By the way, could I have two more hangers, please?",
-        "Oh, could you also bring me a roll of toilet paper, please?",
-        "That's great. Thank you!"
+        "Could I also have two more hangers, please?",
+        "Could you also bring me a roll of toilet paper, please?",
+        "No, that's all. Thank you!"
       ],
       "vocab": [
         ["housekeeping", "房務部"], ["make up the room", "整理房間"], ["fresh towels", "乾淨毛巾"],
         ["bath towel", "浴巾"], ["hand towel", "擦手巾"], ["hanger", "衣架"], ["toilet paper", "衛生紙"],
-        ["a roll of toilet paper", "一捲衛生紙"], ["Do Not Disturb sign", "請勿打擾牌"], ["remove", "拿掉"],
+        ["a roll of", "一捲"], ["Do Not Disturb sign", "請勿打擾牌"], ["remove", "拿掉"],
         ["shortly", "馬上；很快"], ["go out for a while", "出去一下"]
       ],
-      "notes": []
+      "notes": [
+        ["make up the room", "Hotel phrase for cleaning and tidying a guest room."],
+        ["It seems that...", "A soft, polite way to point out a problem without sounding like a complaint."]
+      ]
     },
     {
       "id": "hotel-breakfast",
       "cat": "hotel",
       "title": "Hotel Breakfast & Local Breakfast Recommendations",
       "zh": "飯店早餐・推薦愛爾蘭早餐",
-      "desc": "You didn't book breakfast with your hotel reservation, but decide to have breakfast at the hotel one morning. Afterwards, you ask the receptionist for a good Irish breakfast nearby.",
+      "desc": "Deciding to have breakfast at the hotel one morning, then asking the receptionist for a good Irish breakfast place nearby.",
       "parts": [
         { "title": "Having Breakfast at the Hotel", "lines": [
           ["Receptionist", "Good morning. How can I help you?"],
-          ["You", "Good morning. Breakfast wasn't included in my reservation. Is it possible to have breakfast this morning?"],
-          ["Receptionist", "Yes, that's no problem. Breakfast is available this morning. It's €15 per person."],
+          ["You", "Good morning. I'd like to have breakfast here this morning. Is that possible?"],
+          ["Receptionist", "Yes, of course. It's €15 per person."],
           ["You", "So, do I pay now?"],
-          ["Receptionist", "Yes, you can pay at the reception desk now, or you can charge it to your room."],
+          ["Receptionist", "You can pay now, or you can charge it to your room."],
           ["You", "Okay, please charge it to my room."],
-          ["Receptionist", "Certainly. I'll add the €15 breakfast charge to your room. You can have breakfast in the dining room on the first floor."],
+          ["Receptionist", "Certainly. Breakfast is in the dining room on the first floor."],
           ["You", "What time is breakfast served until?"],
-          ["Receptionist", "Breakfast is served until 10:00 a.m."],
+          ["Receptionist", "Breakfast is served until 10 a.m."],
           ["You", "Okay, I'll go now. Thank you!"],
           ["Receptionist", "You're welcome. Enjoy your breakfast!"]
         ]},
-        { "title": "At the Breakfast Room", "lines": [
-          ["You", "Do I need to give the staff my room number?"],
-          ["Breakfast Staff", "Yes, please. What's your room number?"],
+        { "title": "In the Dining Room", "lines": [
+          ["Breakfast Staff", "Good morning! What's your room number, please?"],
           ["You", "Two one four."],
           ["Breakfast Staff", "Thank you. Please take a seat anywhere you'd like."],
           ["You", "Excuse me, where can I get coffee and tea?"],
@@ -838,20 +879,18 @@
           ["Breakfast Staff", "Of course. Please help yourself."],
           ["You", "Which one is the orange juice?"],
           ["Breakfast Staff", "The one on the left is orange juice."],
-          ["You", "May I take some fruit back to my room?"],
-          ["Breakfast Staff", "I'm afraid not. The food and drinks are only for consumption in the dining area."],
-          ["You", "Okay. I see. Thank you."],
-          ["Breakfast Staff", "You're welcome. Enjoy the rest of your breakfast!"],
           ["You", "Excuse me, could I have a butter knife, please?"],
           ["Breakfast Staff", "Of course. I'll get one for you."],
-          ["You", "Excuse me, could I have a napkin, please?"],
-          ["Breakfast Staff", "Certainly. Here you are."]
+          ["You", "May I take some fruit back to my room?"],
+          ["Breakfast Staff", "I'm afraid not. The food and drinks are only for the dining room."],
+          ["You", "Okay. I see. Thank you."],
+          ["Breakfast Staff", "You're welcome. Enjoy the rest of your breakfast!"]
         ]},
         { "title": "Asking for a Nearby Irish Breakfast", "lines": [
           ["You", "Could you recommend a good Irish breakfast place nearby?"],
-          ["Receptionist", "Certainly. There's a lovely place about a five-minute walk from here. Would you like me to show you where it is?"],
+          ["Receptionist", "Certainly. There's a lovely café about a five-minute walk from here. Would you like me to show you on the map?"],
           ["You", "Yes, please."],
-          ["Receptionist", "Sure. It's just around the corner."],
+          ["Receptionist", "Here it is. It's just around the corner."],
           ["You", "Do I need to book in advance?"],
           ["Receptionist", "No, you don't. You can just walk in, but it can get quite busy on weekends."],
           ["You", "What time would you recommend?"],
@@ -861,37 +900,31 @@
         ]}
       ],
       "sentences": [
-        "Breakfast wasn't included in my reservation.",
-        "Is it possible to have breakfast this morning?",
+        "I'd like to have breakfast here this morning. Is that possible?",
+        "So, do I pay now?",
         "Please charge it to my room.",
         "What time is breakfast served until?",
-        "Do I need to give the staff my room number?",
         "Excuse me, where can I get coffee and tea?",
         "Can I help myself to the juice?",
         "Which one is the orange juice?",
-        "May I take some fruit back to my room?",
         "Could I have a butter knife, please?",
-        "Could I have a napkin, please?",
+        "May I take some fruit back to my room?",
         "Could you recommend a good Irish breakfast place nearby?",
         "Do I need to book in advance?",
         "What time would you recommend?",
-        "I'll go around 9 a.m. tomorrow.",
         "Thanks for the recommendation."
       ],
       "vocab": [
         ["charge it to my room", "記在房帳上"], ["dining room", "餐廳"], ["breakfast is served until...", "早餐供應到…"],
-        ["server", "服務生"], ["help yourself", "請自取"], ["fruit", "水果"], ["butter knife", "奶油刀"],
-        ["napkin", "餐巾紙"], ["Irish breakfast", "愛爾蘭早餐"], ["nearby", "附近"],
-        ["book in advance", "事先預約"], ["recommendation", "推薦"], ["walk in", "不用預約直接去"],
-        ["consumption", "食用"]
+        ["take a seat", "請坐"], ["help yourself", "請自取"], ["butter knife", "奶油刀"],
+        ["Irish breakfast", "愛爾蘭早餐"], ["nearby", "附近"], ["around the corner", "轉角就到"],
+        ["book in advance", "事先預約"], ["walk in", "不用預約直接去"], ["recommendation", "推薦"]
       ],
       "notes": [
-        ["Breakfast wasn't included in my reservation.", "Use reservation as the noun for your hotel booking."],
-        ["Please charge it to my room.", "A natural way to add a hotel expense to your room account."],
+        ["Please charge it to my room.", "A natural way to add a hotel expense to your room bill and pay at check-out."],
         ["What time is breakfast served until?", "A natural way to ask when breakfast ends."],
         ["Can I help myself to the juice?", "help yourself to... means take something yourself."],
-        ["Do I need to book in advance?", "A useful general question for restaurants, attractions, and activities."],
-        ["What time would you recommend?", "Natural when asking someone to suggest the best time."]
+        ["Do I need to book in advance?", "A useful general question for restaurants, attractions, and activities."]
       ]
     },
     {
@@ -899,82 +932,84 @@
       "cat": "food",
       "title": "Restaurant — Dinner, Dessert & Card Payment Problem",
       "zh": "餐廳：晚餐・甜點・刷卡失敗",
-      "desc": "Ordering dinner, asking about the portion and dessert, getting takeaway, and dealing with a card payment problem.",
+      "desc": "Getting a table, ordering dinner, taking leftovers to go, ordering dessert, asking about tipping, and dealing with a card that doesn't work.",
       "parts": [
-        { "lines": [
-          ["Waiter", "Good evening! How many people are you dining with?"],
-          ["You", "Do you have a table for one?"],
-          ["Waiter", "Of course. Would you like to sit by the window?"],
+        { "title": "Getting a Table & Ordering", "lines": [
+          ["Waiter", "Good evening! Do you have a reservation?"],
+          ["You", "No, I don't. Do you have a table for one?"],
+          ["Waiter", "Of course."],
           ["You", "May I have a window seat?"],
-          ["Waiter", "Certainly. Right this way."],
-          ["Waiter", "Here's the menu. Is this your first time here?"],
-          ["You", "It's my first time here. What would you recommend?"],
-          ["Waiter", "Our seafood pasta is very popular. Would you like to try it?"],
+          ["Waiter", "Certainly. Right this way. Here's the menu. Is this your first time here?"],
+          ["You", "Yes, it is. What would you recommend?"],
+          ["Waiter", "Our seafood pasta is very popular."],
           ["You", "Is it too much for one person?"],
           ["Waiter", "It's a fairly generous portion, but it should be fine for one person."],
-          ["You", "Do I have to order a drink, or could I just have some still water?"],
-          ["Waiter", "Still or sparkling?"],
-          ["You", "Still, please."],
-          ["Waiter", "Of course."],
-          ["You", "Excuse me, could I have a napkin, please?"],
-          ["Waiter", "Of course. Here you are."],
-          ["You", "Excuse me, could I see the dessert menu?"],
-          ["Waiter", "Certainly. Here you are."],
-          ["You", "Let me see..."],
-          ["Waiter", "Take your time. Our chocolate brownie is very popular."],
-          ["You", "Does the brownie come with ice cream?"],
+          ["You", "Okay, I'll have the seafood pasta, please."],
+          ["Waiter", "Great. Anything to drink?"],
+          ["You", "Do I have to order a drink, or could I just have some water?"],
+          ["Waiter", "Water is fine. Still or sparkling?"],
+          ["You", "Still, please."]
+        ]},
+        { "title": "Leftovers & Dessert", "lines": [
+          ["You", "Excuse me. I can't finish this. Could I get it to go, please?"],
+          ["Waiter", "Of course. I'll bring you a takeaway box."],
+          ["You", "And could I see the dessert menu?"],
+          ["Waiter", "Certainly. Here you are. Our chocolate brownie is very popular."],
+          ["You", "Let me see... Does the brownie come with ice cream?"],
           ["Waiter", "Yes, it comes with a scoop of vanilla ice cream. Would you like to try it?"],
           ["You", "Yes, please."],
-          ["Waiter", "Great choice."],
-          ["You", "I can't finish this. Could I get it to go, please?"],
-          ["Waiter", "Of course. I'll bring you a takeaway box."],
-          ["You", "And could I have the bill, please?"],
+          ["Waiter", "Great choice."]
+        ]},
+        { "title": "The Bill & Card Problem", "lines": [
+          ["You", "Excuse me, could I have the bill, please?"],
           ["Waiter", "Certainly. Here's your bill."],
+          ["You", "Is service included? Do I need to pay a tip?"],
+          ["Waiter", "No, there's no service charge included. Tipping is optional."],
           ["You", "Okay, thank you. I'd like to pay by card. Here you are."],
           ["Waiter", "I'm sorry, but your card was declined."],
           ["You", "Oops... Could you try this one, please?"],
           ["Waiter", "I'm afraid this one isn't working either."],
-          ["You", "Wow... what happened? Is there a problem with the card machine?"],
+          ["You", "What happened? Is there a problem with the card machine?"],
           ["Waiter", "It seems to be working for other payments. Would you like me to try your card again?"],
-          ["You", "Could you please try again?"],
+          ["You", "Yes, could you please try again?"],
           ["Waiter", "I'm sorry, it still isn't going through."],
           ["You", "I'm sorry. My cards usually work fine. What should I do?"],
           ["Waiter", "Let me speak to my manager and see what we can do."],
-          ["Manager", "We can make an exception this time. If you have enough cash for part of the bill, we can work something out."],
-          ["You", "Wow... really? I really appreciate that. I'll go back to my hotel and try to set up Apple Pay. Then I'll come back later. Is that okay?"],
+          ["Manager", "We can make an exception this time. If you have some cash for part of the bill, we can work something out."],
+          ["You", "Really? I really appreciate that. I'll go back to my hotel and try to set up Apple Pay. Then I'll come back later. Is that okay?"],
           ["Manager", "Yes, that's absolutely fine. I'll make a note of it. Just come back when you can."],
-          ["You", "Do I need to pay a tip?"],
-          ["Waiter", "No, there's no service charge included. Tipping is optional."],
-          ["You", "Thank you very much. Have a good night!"],
-          ["Waiter", "You're very welcome. Have a good night!"]
+          ["You", "Thank you so much for understanding. I'll be back soon."],
+          ["Manager", "No problem at all. Have a good night!"]
         ]}
       ],
       "sentences": [
         "Do you have a table for one?",
         "May I have a window seat?",
-        "It's my first time here. What would you recommend?",
+        "What would you recommend?",
         "Is it too much for one person?",
-        "Do I have to order a drink, or could I just have some still water?",
+        "Do I have to order a drink, or could I just have some water?",
+        "I can't finish this. Could I get it to go, please?",
         "Could I see the dessert menu?",
         "Does the brownie come with ice cream?",
-        "I can't finish this. Could I get it to go, please?",
         "Could I have the bill, please?",
+        "Is service included? Do I need to pay a tip?",
         "I'd like to pay by card.",
         "Could you try this one, please?",
         "Is there a problem with the card machine?",
         "My cards usually work fine. What should I do?",
         "I'll go back to my hotel and try to set up Apple Pay. Then I'll come back later. Is that okay?",
-        "Do I need to pay a tip?"
+        "Thank you so much for understanding."
       ],
       "vocab": [
-        ["a table for one", "一位"], ["generous portion", "份量很多"], ["still water", "無氣泡水"],
-        ["sparkling water", "氣泡水"], ["dessert menu", "甜點菜單"], ["a scoop of", "一球"],
-        ["to go", "外帶"], ["takeaway box", "外帶盒"], ["bill", "帳單"], ["declined", "（卡片）被拒"],
-        ["card machine", "刷卡機"], ["go through", "（付款）成功"], ["make an exception", "破例"],
-        ["service charge", "服務費"], ["tip", "小費"], ["optional", "可自由選擇的"]
+        ["reservation", "訂位"], ["a table for one", "一位"], ["generous portion", "份量很多"],
+        ["still water", "無氣泡水"], ["sparkling water", "氣泡水"], ["to go", "外帶"], ["takeaway box", "外帶盒"],
+        ["dessert menu", "甜點菜單"], ["a scoop of", "一球"], ["bill", "帳單"], ["service charge", "服務費"],
+        ["tip", "小費"], ["optional", "可自由選擇的"], ["declined", "（卡片）被拒"], ["card machine", "刷卡機"],
+        ["go through", "（付款）成功"], ["make an exception", "破例"], ["work something out", "想辦法解決"]
       ],
       "notes": [
         ["Could I get it to go?", "A natural way to ask for takeaway in a restaurant."],
+        ["Is service included?", "Ask this when you're not sure if the bill already includes a service charge."],
         ["It isn't going through.", "Means the card payment hasn't been accepted."]
       ]
     },
@@ -991,24 +1026,22 @@
           ["Barista", "Of course. Here you are."],
           ["You", "Let me see... Do you have any decaf options?"],
           ["Barista", "Sure. We have decaf coffee, tea, and hot chocolate. Would you like something hot or cold?"],
-          ["You", "Do you have any herbal tea?"],
+          ["You", "Something hot. Do you have any herbal tea?"],
           ["Barista", "Yes, we do. We have peppermint tea and chamomile tea. Which one would you like?"],
           ["You", "A hot peppermint tea, and no sugar, please."],
           ["Barista", "Sure. One hot peppermint tea, no sugar."],
           ["You", "Do you have any cakes?"],
-          ["Barista", "Yes, we do. We have a few cakes today. We have chocolate cake, carrot cake, and cheesecake."],
+          ["Barista", "Yes, we have chocolate cake, carrot cake, and cheesecake today."],
           ["You", "What do you recommend?"],
           ["Barista", "I'd recommend the carrot cake. It's one of our most popular ones."],
           ["You", "Oh, I don't like carrots. Haha. I'll have the chocolate cake, please."],
-          ["Barista", "No worries at all! Chocolate cake it is. And one hot peppermint tea, no sugar. Anything else?"],
-          ["You", "No, thank you."],
-          ["You", "May I use the toilet?"],
-          ["Barista", "Of course. It's just at the back, on your left."],
+          ["Barista", "No worries at all! Chocolate cake it is. Anything else?"],
           ["You", "May I have some water?"],
           ["Barista", "Of course. Would you like still or sparkling water?"],
           ["You", "Still, please."],
           ["Barista", "Sure. I'll bring you a glass of still water."],
-          ["Barista", "Here you are. Enjoy!"],
+          ["You", "And may I use the toilet?"],
+          ["Barista", "Of course. It's just at the back, on your left."],
           ["You", "Thank you."]
         ]}
       ],
@@ -1020,17 +1053,18 @@
         "Do you have any cakes?",
         "What do you recommend?",
         "I don't like carrots. I'll have the chocolate cake, please.",
-        "May I use the toilet?",
         "May I have some water?",
-        "Still, please."
+        "Still, please.",
+        "May I use the toilet?"
       ],
       "vocab": [
-        ["decaf", "低咖啡因"], ["herbal tea", "花草茶"], ["peppermint tea", "薄荷茶"],
+        ["barista", "咖啡師"], ["decaf", "低咖啡因"], ["herbal tea", "花草茶"], ["peppermint tea", "薄荷茶"],
         ["chamomile tea", "洋甘菊茶"], ["no sugar", "不加糖"], ["carrot cake", "紅蘿蔔蛋糕"],
         ["cheesecake", "起司蛋糕"], ["at the back", "在後面"], ["still or sparkling", "無氣泡或氣泡"]
       ],
       "notes": [
-        ["No worries at all!", "A friendly Irish/UK way of saying \"no problem\"."]
+        ["No worries at all!", "A friendly Irish/UK way of saying \"no problem\"."],
+        ["... it is.", "\"Chocolate cake it is\" = OK, chocolate cake then (確認你的選擇)."]
       ]
     },
     {
@@ -1038,21 +1072,22 @@
       "cat": "food",
       "title": "Clothes Shop — Trying On & Buying a Jacket",
       "zh": "服飾店：試穿・買外套",
-      "desc": "Browsing, asking for a size, trying on a jacket, checking the price and discount, and paying by card.",
+      "desc": "Browsing, asking for a size, trying on a jacket that doesn't suit you, finding another one on sale, and paying by card.",
       "parts": [
-        { "lines": [
+        { "title": "Browsing", "lines": [
           ["Staff", "Hi! Can I help you with anything?"],
           ["You", "Just looking around, thanks."],
           ["Staff", "Of course. Take your time."],
-          ["Staff", "Is there anything you'd like to try on?"],
-          ["You", "Do you have this in a medium?"],
+          ["You", "Excuse me, do you have this in a medium?"],
           ["Staff", "Let me check for you. Yes, we do. Here's a medium. Would you like to try it on?"],
           ["You", "Okay. Thank you."],
           ["You", "Hmm... I don't think it suits me. Sorry."],
           ["Staff", "No problem at all. Would you like to try something else?"],
           ["You", "No, thank you. I'll have another look around."],
-          ["Staff", "Of course. Just let me know if you need any help."],
-          ["You", "How much is this one?"],
+          ["Staff", "Of course. Just let me know if you need any help."]
+        ]},
+        { "title": "Buying a Jacket", "lines": [
+          ["You", "Excuse me, how much is this jacket?"],
           ["Staff", "It's €89.99."],
           ["You", "Wow... that's a bit expensive."],
           ["Staff", "It is a little pricey, but it's currently 20% off."],
@@ -1065,13 +1100,12 @@
           ["Staff", "Great! Would you like to take it?"],
           ["You", "Hmm... let me think about it."],
           ["Staff", "Sure, no problem. Take your time."],
-          ["You", "Okay, I'll take that one."],
-          ["Staff", "Great! Let's get you checked out. How would you like to pay?"],
+          ["You", "Okay, I'll take it."],
+          ["Staff", "Great! How would you like to pay?"],
           ["You", "By card, please."],
           ["Staff", "Sure. That'll be €71.99, please. You can tap your card here."],
           ["You", "Do I need to sign?"],
-          ["Staff", "No, you don't. Just tap your card here."],
-          ["Staff", "Here's your receipt and your bag. Have a nice day!"],
+          ["Staff", "No, you don't. Here's your receipt and your bag. Have a nice day!"],
           ["You", "Thank you. Have a nice day!"]
         ]}
       ],
@@ -1080,20 +1114,20 @@
         "Do you have this in a medium?",
         "I don't think it suits me. Sorry.",
         "I'll have another look around.",
-        "How much is this one?",
+        "How much is this jacket?",
         "That's a bit expensive.",
         "How much is it after the 20% discount?",
         "May I try it on?",
         "It fits well. I like it.",
         "Let me think about it.",
-        "Okay, I'll take that one.",
+        "Okay, I'll take it.",
         "By card, please.",
         "Do I need to sign?"
       ],
       "vocab": [
-        ["try on", "試穿"], ["medium", "M 號"], ["suit", "適合（某人）"], ["pricey", "有點貴"],
-        ["discount", "折扣"], ["20% off", "打八折"], ["fitting room", "試衣間"], ["fit", "合身"],
-        ["tap your card", "感應刷卡"], ["sign", "簽名"], ["receipt", "收據"]
+        ["look around", "隨便看看"], ["try on", "試穿"], ["medium", "M 號"], ["suit", "適合（某人）"],
+        ["jacket", "外套"], ["pricey", "有點貴"], ["discount", "折扣"], ["20% off", "打八折"],
+        ["fitting room", "試衣間"], ["fit", "合身"], ["tap your card", "感應刷卡"], ["sign", "簽名"], ["receipt", "收據"]
       ],
       "notes": [
         ["suit vs. fit", "It suits me = 好看、適合我；It fits = 尺寸剛好。"],
@@ -1112,7 +1146,7 @@
           ["Staff", "Sure. It's in aisle five, near the soft drinks."],
           ["You", "Where can I find aisle five?"],
           ["Staff", "It's just over there, on your right, next to aisle four."],
-          ["You", "What's a popular snack in Ireland?"],
+          ["You", "Thank you. Also, what's a popular snack in Ireland?"],
           ["Staff", "Tayto crisps are very popular in Ireland. You should give them a try!"],
           ["You", "Which flavour is the most popular?"],
           ["Staff", "I'd say cheese and onion is probably the most popular."],
@@ -1138,9 +1172,9 @@
       ],
       "vocab": [
         ["bottled water", "瓶裝水"], ["aisle", "（超市）走道"], ["soft drinks", "汽水飲料"],
-        ["crisps", "洋芋片（英／愛）"], ["flavour", "口味"], ["refrigerated section", "冷藏區"],
-        ["single pack", "單入包裝"], ["individual", "單個的"], ["top shelf", "最上層"],
-        ["Greek yogurt", "希臘優格"]
+        ["crisps", "洋芋片（英／愛）"], ["give it a try", "試試看"], ["flavour", "口味"],
+        ["refrigerated section", "冷藏區"], ["single pack", "單入包裝"], ["individual", "單個的"],
+        ["top shelf", "最上層"], ["Greek yogurt", "希臘優格"]
       ],
       "notes": [
         ["crisps", "In Ireland and the UK, \"crisps\" are potato chips. \"Chips\" are hot fries."],
@@ -1157,32 +1191,36 @@
         { "lines": [
           ["Cashier", "Hi. Did you find everything you were looking for?"],
           ["You", "Yes, thank you. I found everything I was looking for."],
-          ["Cashier", "Great. Your total is €18.65. How would you like to pay?"],
+          ["Cashier", "Great. Do you need a bag?"],
+          ["You", "No, thanks. I don't need a plastic bag. I have my own shopping bag."],
+          ["Cashier", "No problem. Your total is €18.65. How would you like to pay?"],
           ["You", "By card, please."],
           ["Cashier", "Sure. Just tap your card here."],
-          ["You", "I don't need a plastic bag. I have my own shopping bag."],
-          ["Cashier", "No problem. Here's your receipt. Have a nice day!"],
+          ["Cashier", "Here's your receipt. Have a nice day!"],
           ["You", "Thank you. You too!"]
         ]}
       ],
       "sentences": [
         "Yes, thank you. I found everything I was looking for.",
+        "No, thanks. I don't need a plastic bag.",
+        "I have my own shopping bag.",
         "By card, please.",
-        "I don't need a plastic bag. I have my own shopping bag.",
         "Thank you. You too!"
       ],
       "vocab": [
         ["cashier", "收銀員"], ["total", "總金額"], ["tap", "感應"], ["plastic bag", "塑膠袋"],
         ["shopping bag", "購物袋"], ["receipt", "收據"]
       ],
-      "notes": []
+      "notes": [
+        ["Bags in Ireland", "Shops charge for plastic bags, so cashiers often ask \"Do you need a bag?\"."]
+      ]
     },
     {
       "id": "food-refund",
       "cat": "food",
       "title": "Supermarket — Asking for a Refund",
       "zh": "超市：要求退款",
-      "desc": "Returning to the supermarket after finding oranges cheaper at a stall outside. The store initially refuses, then makes an exception and processes a refund.",
+      "desc": "Returning to the supermarket after finding oranges cheaper at a stall outside. The store first says no, then makes an exception.",
       "parts": [
         { "lines": [
           ["Staff", "Hi there. How can I help you?"],
@@ -1191,17 +1229,17 @@
           ["You", "No, there's nothing wrong with the oranges. I just found some cheaper ones at a stall outside."],
           ["Staff", "I see. Do you still have the receipt?"],
           ["You", "Yes. Here you are."],
-          ["Staff", "Thank you. Let me have a look... Hmm, I'm afraid we can't offer a refund just because you found them cheaper somewhere else. Our refund policy only covers faulty or damaged products."],
-          ["You", "Oh... really? Okay, I see. Then, can I exchange them for something else?"],
-          ["Staff", "Unfortunately, we can't exchange them either. They're not faulty, so our policy doesn't allow returns or exchanges."],
+          ["Staff", "Thank you. Hmm, I'm afraid we can't offer a refund just because you found them cheaper somewhere else. Our refund policy only covers faulty or damaged products."],
+          ["You", "Oh... really? Then, can I exchange them for something else?"],
+          ["Staff", "Unfortunately, we can't exchange them either, because they're not faulty."],
           ["You", "Okay, I see. It's okay. Thank you."],
-          ["Staff", "I see. Let me check with my manager."],
+          ["Staff", "Wait a moment. Let me check with my manager."],
           ["Staff", "Okay, we can make an exception this time. We can give you a refund."],
           ["You", "Oh, really? Thank you so much!"],
-          ["Staff", "Yes, that's no problem. I'll process the refund back to your card. It should appear in your account within a few days."],
-          ["You", "Yes, if that's easier for you."],
+          ["Staff", "No problem. I'll put the refund back on your card. Is that okay? It should appear in your account within a few days."],
+          ["You", "Yes, that's fine."],
           ["Staff", "All done. Here's your receipt."],
-          ["You", "Okay, thanks for your help. Have a nice day!"]
+          ["You", "Thanks for your help. Have a nice day!"]
         ]}
       ],
       "sentences": [
@@ -1210,13 +1248,12 @@
         "Can I exchange them for something else?",
         "Okay, I see. It's okay. Thank you.",
         "Oh, really? Thank you so much!",
-        "Yes, if that's easier for you.",
         "Thanks for your help. Have a nice day!"
       ],
       "vocab": [
         ["refund", "退款"], ["receipt", "收據"], ["stall", "攤位"], ["refund policy", "退款規定"],
         ["faulty", "有瑕疵的"], ["damaged", "損壞的"], ["exchange", "換貨"], ["return", "退貨"],
-        ["make an exception", "破例"], ["process", "處理"]
+        ["make an exception", "破例"], ["appear in your account", "退回到帳戶"]
       ],
       "notes": [
         ["I'm afraid we can't...", "A polite way staff say no. Listen for \"I'm afraid\" — it usually means bad news."]
@@ -1233,16 +1270,16 @@
           ["Vendor", "Hi there! What can I get for you?"],
           ["You", "How much are these strawberries?"],
           ["Vendor", "They're €5 a punnet. Would you like one?"],
-          ["You", "That's a bit too much for me. My hotel doesn't have a refrigerator. Could I just get half a punnet?"],
-          ["Vendor", "Sure, no problem. I can give you half a punnet. Would you like to choose the strawberries yourself?"],
-          ["You", "Okay. The oranges are €2 for 10? Can I buy five?"],
-          ["Vendor", "Yes, that's right. You can buy five for €1. Would you like to choose them yourself?"],
-          ["You", "Yes. May I have a plastic bag?"],
+          ["You", "That's a bit too much for me. I'm traveling alone. Could I just get half a punnet?"],
+          ["Vendor", "Sure, no problem. Half a punnet is €2.50."],
+          ["You", "And the oranges are €2 for 10? Can I buy five?"],
+          ["Vendor", "Yes, that's right. Five for €1. Would you like to choose them yourself?"],
+          ["You", "Yes, please. May I have a plastic bag?"],
           ["Vendor", "Of course. Here you are. Anything else?"],
           ["You", "That's all. How much is it altogether?"],
-          ["Vendor", "That'll be €2.50 altogether."],
-          ["You", "Sorry, I don't have a smaller note."],
-          ["Vendor", "That's okay. I can give you change. Here you are."],
+          ["Vendor", "That'll be €3.50 altogether."],
+          ["You", "Sorry, I don't have a smaller note. Here's €10."],
+          ["Vendor", "That's okay. Here's your change, €6.50."],
           ["You", "Thank you! Have a good day!"],
           ["Vendor", "You too! Enjoy your fruit!"]
         ]}
@@ -1250,7 +1287,7 @@
       "sentences": [
         "How much are these strawberries?",
         "That's a bit too much for me.",
-        "My hotel doesn't have a refrigerator. Could I just get half a punnet?",
+        "Could I just get half a punnet?",
         "The oranges are €2 for 10? Can I buy five?",
         "May I have a plastic bag?",
         "That's all. How much is it altogether?",
@@ -1258,7 +1295,7 @@
       ],
       "vocab": [
         ["vendor", "攤販"], ["punnet", "（裝莓果的）小盒"], ["half a punnet", "半盒"],
-        ["refrigerator", "冰箱"], ["altogether", "總共"], ["note", "紙鈔"], ["change", "找零"]
+        ["choose", "挑選"], ["altogether", "總共"], ["note", "紙鈔"], ["change", "找零"]
       ],
       "notes": [
         ["punnet", "Irish/UK word for the small box that berries are sold in."],
@@ -1270,39 +1307,38 @@
       "cat": "food",
       "title": "Street Food Stall — Smoked Salmon Sandwich Meal",
       "zh": "街頭小吃：煙燻鮭魚三明治套餐",
-      "desc": "Ordering a sandwich meal, asking about soft drinks and crisps, paying by card, and asking to have the sandwich cut in half.",
+      "desc": "Ordering a sandwich meal deal, asking about drinks and crisp flavours, paying by card, and asking to have the sandwich cut in half.",
       "parts": [
         { "lines": [
           ["Vendor", "Hi there! What can I get for you?"],
           ["You", "I'd like a smoked salmon sandwich."],
-          ["Vendor", "Sure. Would you like anything else with that? We have crisps, salad, and a drink."],
+          ["Vendor", "Sure. Would you like anything else with that? We have crisps, salad, and drinks."],
           ["You", "Do you have a meal deal, or do I have to order everything separately?"],
           ["Vendor", "Yes, we have a meal deal. You can get a sandwich, a bag of crisps, and a drink for €8.50."],
           ["You", "Okay. Then I'd like the smoked salmon sandwich meal, please."],
           ["Vendor", "Sure. What would you like to drink? We have still water, sparkling water, and soft drinks."],
           ["You", "What kind of soft drinks do you have?"],
-          ["Vendor", "We have Coca-Cola, Diet Coke, Sprite, and Fanta. Which one would you like?"],
+          ["Vendor", "We have Coca-Cola, Diet Coke, Sprite, and Fanta."],
           ["You", "Sprite, please."],
-          ["Vendor", "Sure. Would you like any crisps with your meal? We have salt & vinegar, cheese & onion, and ready salted."],
-          ["You", "What's vinegar?"],
+          ["Vendor", "And which crisps would you like? We have salt & vinegar, cheese & onion, and ready salted."],
+          ["You", "What's salt & vinegar like?"],
           ["Vendor", "It's a little tangy and sour. If you don't like sour flavours, I'd recommend the ready salted."],
           ["You", "Okay. Ready salted, please."],
-          ["Vendor", "Sure. One smoked salmon sandwich meal with Sprite and ready salted crisps. That'll be €8.50, please."],
+          ["Vendor", "One smoked salmon sandwich meal with Sprite and ready salted crisps. That'll be €8.50, please."],
           ["You", "Can I pay by card?"],
           ["Vendor", "Yes, of course. Just tap your card here."],
           ["You", "Is that okay?"],
-          ["Vendor", "Yes, that's gone through. You're all set. Here's your sandwich and drink. Enjoy!"],
+          ["Vendor", "Yes, that's gone through. You're all set."],
           ["You", "Excuse me, could you cut my sandwich in half, please?"],
-          ["Vendor", "Of course. No problem. I'll cut it in half for you."],
-          ["You", "Thank you!"],
-          ["Vendor", "You're very welcome! Enjoy your meal. Have a great day!"]
+          ["Vendor", "Of course. No problem. Here you are. Enjoy!"],
+          ["You", "Thank you!"]
         ]}
       ],
       "sentences": [
         "I'd like a smoked salmon sandwich.",
         "Do you have a meal deal, or do I have to order everything separately?",
         "What kind of soft drinks do you have?",
-        "What's vinegar?",
+        "What's salt & vinegar like?",
         "Ready salted, please.",
         "Can I pay by card?",
         "Is that okay?",
@@ -1315,6 +1351,7 @@
       ],
       "notes": [
         ["meal deal", "Very common in Ireland/UK: a sandwich + snack + drink for one price."],
+        ["What's ... like?", "Ask this when you want someone to describe a taste or thing."],
         ["That's gone through.", "The card payment was successful."]
       ]
     },
@@ -1325,8 +1362,8 @@
       "zh": "市集：逛逛・殺價・回頭買",
       "desc": "Looking at a handmade item, asking for a discount, thinking about it, then returning later to buy it.",
       "parts": [
-        { "lines": [
-          ["Vendor", "Hi there! Feel free to have a look around. Is there anything in particular you're looking for?"],
+        { "title": "First Visit", "lines": [
+          ["Vendor", "Hi there! Feel free to have a look around."],
           ["You", "How much is this one?"],
           ["Vendor", "It's €15."],
           ["You", "Can I pick it up and have a look?"],
@@ -1334,17 +1371,19 @@
           ["You", "It's really pretty, but... is there any chance you could give me a little discount?"],
           ["Vendor", "Hmm... I could give you 10% off. Would that help?"],
           ["You", "Hmm... I'll think about it. Thank you!"],
-          ["Vendor", "Of course. Take your time."],
+          ["Vendor", "Of course. Take your time."]
+        ]},
+        { "title": "Coming Back", "lines": [
           ["You", "Hi, I'm back. You said 10% off, right?"],
-          ["Vendor", "Yes, that's right. I can give you 10% off. Would you like to go ahead with it?"],
+          ["Vendor", "Yes, that's right. Would you like to go ahead with it?"],
           ["You", "Okay, I'll take it!"],
-          ["Vendor", "Great! That'll be €13.50 with the 10% discount. Would you like to pay by card or cash?"],
+          ["Vendor", "Great! That'll be €13.50 with the discount. Card or cash?"],
           ["You", "Card, please."],
           ["Vendor", "Sure. Just tap your card here."],
           ["You", "There you go."],
-          ["Vendor", "Perfect. The payment has gone through. Here's your item. Thank you!"],
+          ["Vendor", "Perfect. Here's your item. Thank you!"],
           ["You", "Thank you. Bye!"],
-          ["Vendor", "You're very welcome! Have a lovely day. Bye!"]
+          ["Vendor", "Have a lovely day. Bye!"]
         ]}
       ],
       "sentences": [
@@ -1358,9 +1397,9 @@
         "There you go."
       ],
       "vocab": [
-        ["have a look around", "隨意看看"], ["in particular", "特別（要找的）"], ["pick it up", "拿起來"],
-        ["handmade", "手工的"], ["locally", "在本地"], ["is there any chance...", "有沒有可能…"],
-        ["10% off", "打九折"], ["go ahead with it", "就決定買了"]
+        ["have a look around", "隨意看看"], ["pick it up", "拿起來"], ["handmade", "手工的"],
+        ["locally", "在本地"], ["is there any chance...", "有沒有可能…"], ["10% off", "打九折"],
+        ["go ahead with it", "就決定買了"]
       ],
       "notes": [
         ["Is there any chance you could...?", "A soft, polite way to ask for something like a discount."]
@@ -1371,7 +1410,7 @@
       "cat": "special",
       "title": "Visiting The Ramparts Practice Location",
       "zh": "拜訪 The Ramparts 練唱地點",
-      "desc": "You visit a place where the choir sometimes practices. You ask whether you can see the practice room, listen from the stairs if they are rehearsing, and take a few photos if the room is empty.",
+      "desc": "You visit a place where the choir sometimes practises. You ask whether you can see the practice room, listen from the stairs if they are rehearsing, and take a few photos if the room is empty.",
       "parts": [
         { "lines": [
           ["Staff", "Hi there. Can I help you?"],
@@ -1426,11 +1465,15 @@
           ["Kevin", "Oh, really? Thank you! Nice to meet you. Are you here on holiday?"],
           ["You", "Yes. I'm staying here for eight days. And I'm so lucky that your 10th Anniversary Concert happens to be on my last night in Dublin, so I booked a ticket!"],
           ["Kevin", "Oh, that's great! So you came to Dublin because of the show?"],
-          ["You", "Yes, I'm here because of Bogum. Haha! And I really love your a cappella singing. I was really touched by how kind you guys were to him at the time. This might sound a little strange, but I also want to say thank you for being so kind to Bogum."],
+          ["You", "Yes, I'm here because of Bogum. Haha! And I really love your a cappella singing."],
+          ["Kevin", "Thank you! That's lovely to hear."],
+          ["You", "I was really touched by how kind you guys were to him at the time. This might sound a little strange, but I also want to say thank you for being so kind to Bogum."],
           ["Kevin", "Oh, thank you! That's really sweet of you to say. We really enjoyed having him with us. Have you been to any of the places where we filmed?"],
           ["You", "Yes! I've actually been to the house he stayed in, Angel Coffee, where he first met the four members, and the community centre where you practiced singing together."],
           ["Kevin", "Wow, you really did your homework! Did you enjoy visiting those places?"],
-          ["You", "Yes, I really like Dublin. And I really loved seeing Bogum with you guys on My Name Is Gabriel. It was really special. I won't keep you. It was really nice meeting you. Thank you so much!"]
+          ["You", "Yes, I really like Dublin. And I really loved seeing Bogum with you guys on My Name Is Gabriel. It was really special."],
+          ["Kevin", "That's so nice. Thanks for coming all this way!"],
+          ["You", "I won't keep you. It was really nice meeting you. Thank you so much! See you at the concert!"]
         ]}
       ],
       "sentences": [
